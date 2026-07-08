@@ -1,0 +1,93 @@
+<div [ngStyle]="mapDivStyle()">
+<div class='lgr_col'>
+  <div class='lgr_10 col_01'><dynamic-field [id]='"pgmname"' [size]=10 [line]=1 [column]=1 [(ngModel)]='pgmname'></dynamic-field></div>
+  <div class='lgr_12 col_34'><span class='white' id='text1'>AWS CardDemo</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"date1"' [size]=8 [line]=1 [column]=71 [(ngModel)]='date1'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_10 col_01'><dynamic-field [id]='"labelUser"' [size]=10 [line]=2 [column]=1 [(ngModel)]='labelUser'></dynamic-field></div>
+  <div class='lgr_18 col_31'><dynamic-field [id]='"labelCreateCreditCard"' [size]=18 [line]=2 [column]=31 [(ngModel)]='labelCreateCreditCard'></dynamic-field></div>
+  <div class='lgr_18 col_31'><dynamic-field [id]='"labelUpdateCreditCard"' [size]=18 [line]=2 [column]=31 [(ngModel)]='labelUpdateCreditCard'></dynamic-field></div>
+  <div class='lgr_16 col_32'><dynamic-field [id]='"labelViewCreditCard"' [size]=16 [line]=2 [column]=32 [(ngModel)]='labelViewCreditCard'></dynamic-field></div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"time1"' [size]=8 [line]=2 [column]=71 [edtwrd]='"0  :  :  "' [(ngModel)]='time1'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text2'>Card Number . . . . . .</span>  </div>
+  <div class='lgr_19 col_28'><dynamic-field [id]='"cardnum"' [size]=19 [line]=5 [column]=28 [digitNb]='16' [decSize]='0' [edtwrd]='"    -    -    -    "' [(ngModel)]='cardnum'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text3'>Customer ID . . . . . .</span>  </div>
+  <div class='lgr_09 col_28'><dynamic-field [id]='"custid"' [size]=9 [line]=6 [column]=28 [(ngModel)]='custid'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text4'>Account Number. . . . .</span>  </div>
+  <div class='lgr_12 col_28'><dynamic-field [id]='"acctnum"' [size]=12 [line]=7 [column]=28 [(ngModel)]='acctnum'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text5'>Name on card. . . . . .</span>  </div>
+  <div class='lgr_25 col_28'><dynamic-field [id]='"name"' [size]=25 [line]=9 [column]=28 [(ngModel)]='name'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text6'>Primary or Secondary. .</span>  </div>
+  <div class='lgr_01 col_28'><dynamic-field [id]='"primarysec"' [size]=1 [line]=10 [column]=28 [(ngModel)]='primarysec'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text7'>Status. . . . . . . . .</span>  </div>
+  <div class='lgr_01 col_28'><dynamic-field [id]='"status"' [size]=1 [line]=12 [column]=28 [(ngModel)]='status'></dynamic-field></div>
+  <div class='lgr_15 col_31'><dynamic-field [id]='"statusdess"' [size]=15 [line]=12 [column]=31 [(ngModel)]='statusdess'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text8'>Expiry Date . . . . . .</span>  </div>
+  <div class='lgr_02 col_28'><dynamic-field [id]='"expirymo"' [size]=2 [line]=14 [column]=28 [(ngModel)]='expirymo'></dynamic-field></div>
+  <div class='lgr_01 col_31'><span class='default' id='text9'>/</span>  </div>
+  <div class='lgr_04 col_33'><dynamic-field [id]='"expiryyr"' [size]=4 [line]=14 [column]=33 [(ngModel)]='expiryyr'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_24 col_03'><span class='default' id='text10'>CVV . . . . . . . . . . </span>  </div>
+  <div class='lgr_03 col_28'><dynamic-field [id]='"cvv"' [size]=3 [line]=15 [column]=28 [(ngModel)]='cvv'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_11 col_03'><dynamic-field [id]='"labelCreatedBy"' [size]=11 [line]=18 [column]=3 [(ngModel)]='labelCreatedBy'></dynamic-field></div>
+  <div class='lgr_10 col_15'><dynamic-field [id]='"ccmcrtusr"' [size]=10 [line]=18 [column]=15 [(ngModel)]='ccmcrtusr'></dynamic-field></div>
+  <div class='lgr_03 col_28'><dynamic-field [id]='"labelOn"' [size]=3 [line]=18 [column]=28 [(ngModel)]='labelOn'></dynamic-field></div>
+  <div class='lgr_10 col_32'><dynamic-field [id]='"ccmcrtdt"' [size]=10 [line]=18 [column]=32 [digitNb]='8' [decSize]='0' [edtwrd]='"    -  -  "' [(ngModel)]='ccmcrtdt'></dynamic-field></div>
+  <div class='lgr_08 col_43'><dynamic-field [id]='"ccmcrttm"' [size]=8 [line]=18 [column]=43 [digitNb]='6' [decSize]='0' [edtwrd]='"0  :  :  "' [(ngModel)]='ccmcrttm'></dynamic-field></div>
+  <div class='lgr_08 col_54'><dynamic-field [id]='"labelProgram"' [size]=8 [line]=18 [column]=54 [(ngModel)]='labelProgram'></dynamic-field></div>
+  <div class='lgr_10 col_63'><dynamic-field [id]='"ccmcrtpgm"' [size]=10 [line]=18 [column]=63 [(ngModel)]='ccmcrtpgm'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_11 col_03'><dynamic-field [id]='"labelUpdatedBy"' [size]=11 [line]=19 [column]=3 [(ngModel)]='labelUpdatedBy'></dynamic-field></div>
+  <div class='lgr_10 col_15'><dynamic-field [id]='"ccmchgusr"' [size]=10 [line]=19 [column]=15 [(ngModel)]='ccmchgusr'></dynamic-field></div>
+  <div class='lgr_03 col_28'><dynamic-field [id]='"labelOn1"' [size]=3 [line]=19 [column]=28 [(ngModel)]='labelOn1'></dynamic-field></div>
+  <div class='lgr_10 col_32'><dynamic-field [id]='"ccmchgdt"' [size]=10 [line]=19 [column]=32 [digitNb]='8' [decSize]='0' [edtwrd]='"    -  -  "' [(ngModel)]='ccmchgdt'></dynamic-field></div>
+  <div class='lgr_08 col_43'><dynamic-field [id]='"ccmchgtm"' [size]=8 [line]=19 [column]=43 [digitNb]='6' [decSize]='0' [edtwrd]='"0  :  :  "' [(ngModel)]='ccmchgtm'></dynamic-field></div>
+  <div class='lgr_08 col_54'><dynamic-field [id]='"labelProgram1"' [size]=8 [line]=19 [column]=54 [(ngModel)]='labelProgram1'></dynamic-field></div>
+  <div class='lgr_10 col_63'><dynamic-field [id]='"ccmchgpgm"' [size]=10 [line]=19 [column]=63 [(ngModel)]='ccmchgpgm'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_24 col_01'><dynamic-field [id]='"labelF3ExitF9CardHistory"' [size]=24 [line]=22 [column]=1 [(ngModel)]='labelF3ExitF9CardHistory'></dynamic-field></div>
+  <div class='lgr_08 col_01'><dynamic-field [id]='"labelF2Clear"' [size]=8 [line]=22 [column]=1 [(ngModel)]='labelF2Clear'></dynamic-field></div>
+  <div class='lgr_24 col_01'><dynamic-field [id]='"labelF3ExitF9CardHistory1"' [size]=24 [line]=22 [column]=1 [(ngModel)]='labelF3ExitF9CardHistory1'></dynamic-field></div>
+  <div class='lgr_19 col_11'><dynamic-field [id]='"labelF3ExitF12Cancel"' [size]=19 [line]=22 [column]=11 [(ngModel)]='labelF3ExitF12Cancel'></dynamic-field></div>
+  <div class='lgr_10 col_27'><dynamic-field [id]='"labelF12Cancel"' [size]=10 [line]=22 [column]=27 [(ngModel)]='labelF12Cancel'></dynamic-field></div>
+  <div class='lgr_10 col_27'><dynamic-field [id]='"labelF12Cancel1"' [size]=10 [line]=22 [column]=27 [(ngModel)]='labelF12Cancel1'></dynamic-field></div>
+</div>
+</div>

@@ -1,0 +1,605 @@
+{
+  "format": "dspf",
+  "name": "CDTRN01D",
+  "dspsiz": [
+    "24",
+    "80",
+    "*DS3"
+  ],
+  "indara": "YES",
+  "maps": [
+    {
+      "name": "header",
+      "keep": "YES",
+      "fields": [
+        {
+          "name": "",
+          "color": "WHITE",
+          "initial": "AWS Card Demo",
+          "line": 1,
+          "column": 34,
+          "length": 13,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelTransactionMainScreen",
+          "initial": "Transaction Main Screen",
+          "hilight": "REVERSE",
+          "line": 2,
+          "column": 29,
+          "length": 23,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "date1",
+          "date": "YES",
+          "line": 1,
+          "column": 71,
+          "length": 8,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "time1",
+          "time": "YES",
+          "edtwrd": "'0  :  :  '",
+          "line": 2,
+          "column": 71,
+          "length": 8,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelUser",
+          "user": "YES",
+          "color": "BLUE",
+          "line": 1,
+          "column": 1,
+          "length": 10,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "pgmname",
+          "line": 2,
+          "column": 1,
+          "length": 10,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "BLUE",
+          "initial": "Select Options:",
+          "line": 4,
+          "column": 1,
+          "length": 15,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "BLUE",
+          "initial": "5=Display",
+          "line": 4,
+          "column": 18,
+          "length": 9,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "YELLOW",
+          "initial": "Transaction ID (starts",
+          "line": 5,
+          "column": 1,
+          "length": 22,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "YELLOW",
+          "initial": "with - descend):",
+          "line": 5,
+          "column": 24,
+          "length": 16,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "d1posto",
+          "color": "WHITE",
+          "integerSize": 15,
+          "decimalPosition": 0,
+          "line": 5,
+          "column": 41,
+          "numerical": "NUM_SIGNED",
+          "justify": "RIGHT BLANK",
+          "length": 16,
+          "protection": "UNPROT",
+          "underline": "true",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES"
+        },
+        {
+          "name": "label",
+          "initial": "?",
+          "underline": "true",
+          "color": "BLUE",
+          "line": 7,
+          "column": 1,
+          "length": 1,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelTransactionId",
+          "initial": "Transaction ID",
+          "underline": "true",
+          "color": "BLUE",
+          "line": 7,
+          "column": 4,
+          "length": 14,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelProcessDt",
+          "initial": "Process Dt",
+          "underline": "true",
+          "color": "BLUE",
+          "line": 7,
+          "column": 20,
+          "length": 10,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelDescription",
+          "initial": "Description",
+          "underline": "true",
+          "color": "BLUE",
+          "line": 7,
+          "column": 31,
+          "length": 11,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelAmount",
+          "initial": "Amount",
+          "underline": "true",
+          "color": "BLUE",
+          "line": 7,
+          "column": 62,
+          "length": 6,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelSts",
+          "initial": "Sts",
+          "underline": "true",
+          "color": "BLUE",
+          "line": 7,
+          "column": 75,
+          "length": 3,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        }
+      ]
+    },
+    {
+      "name": "sfl1",
+      "sfl": "YES",
+      "sflnxtchg": "YES",
+      "sflStartLine": 8,
+      "fields": [
+        {
+          "name": "d1soption",
+          "color": "WHITE",
+          "column": 1,
+          "length": 1,
+          "protection": "UNPROT",
+          "underline": "true",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        },
+        {
+          "name": "d1stranid",
+          "column": 4,
+          "length": 15,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        },
+        {
+          "name": "d1sdate",
+          "edtwrd": "'0    -  -  '",
+          "integerSize": 8,
+          "decimalPosition": 0,
+          "column": 20,
+          "numerical": "NUM_STD",
+          "length": 10,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "line": 1
+        },
+        {
+          "name": "d1sdess",
+          "column": 31,
+          "length": 30,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        },
+        {
+          "name": "d1samount",
+          "column": 62,
+          "length": 13,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        },
+        {
+          "name": "d1sstatus",
+          "column": 76,
+          "length": 1,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "name": "ctl1",
+      "pageup": [
+        "25",
+        "'Page Up'"
+      ],
+      "pagedown": [
+        "26",
+        "'Page Down'"
+      ],
+      "cf03": [
+        "03",
+        "'Exit'"
+      ],
+      "cf05": [
+        "05",
+        "'Refresh'"
+      ],
+      "cf06": [
+        "06",
+        "'Add'"
+      ],
+      "cf12": [
+        "12",
+        "'Exit'"
+      ],
+      "overlay": "YES",
+      "fields": [
+        {
+          "name": "sfl1",
+          "sflctl": "sfl1",
+          "line": 8,
+          "numberLinesPerRecord": 1,
+          "sflsiz": "0013",
+          "sflpag": "0013",
+          "sfldsp": "YES",
+          "sfldspctl": "YES",
+          "sflclr": "YES",
+          "sflend": "YES",
+          "pageup": [
+            "Yes"
+          ],
+          "pagedown": [
+            "Yes"
+          ],
+          "column": "",
+          "length": "80",
+          "intensity": "NORM",
+          "protection": "ASKIP",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        }
+      ]
+    },
+    {
+      "name": "footer",
+      "overlay": "YES",
+      "fields": [
+        {
+          "name": "",
+          "color": "WHITE",
+          "initial": "------------------------------------------------------------------------------",
+          "line": 21,
+          "column": 1,
+          "length": 78,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "BLUE",
+          "initial": "F3=Exit",
+          "line": 22,
+          "column": 1,
+          "length": 7,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "BLUE",
+          "initial": "F5=Refresh",
+          "line": 22,
+          "column": 10,
+          "length": 10,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "BLUE",
+          "initial": "F6=Submit",
+          "line": 22,
+          "column": 22,
+          "length": 9,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "BLUE",
+          "initial": "F12=Cancel",
+          "line": 22,
+          "column": 33,
+          "length": 10,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        }
+      ]
+    },
+    {
+      "name": "msgsfl",
+      "sfl": "YES",
+      "sflmsgrcd": "24",
+      "sflStartLine": 24,
+      "fields": [
+        {
+          "name": "msgkey",
+          "intensity": "DRK",
+          "length": "0",
+          "protection": "ASKIP",
+          "column": "0",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        },
+        {
+          "name": "pgmq",
+          "intensity": "DRK",
+          "length": "0",
+          "protection": "ASKIP",
+          "column": "0",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        },
+        {
+          "name": "subfileMessageLine",
+          "column": 2,
+          "length": 76,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        },
+        {
+          "name": "subfileSecondMessageLine",
+          "column": 0,
+          "length": 0,
+          "protection": "ASKIP",
+          "intensity": "DRK",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        },
+        {
+          "name": "subfileMessageId",
+          "column": 0,
+          "length": 0,
+          "protection": "ASKIP",
+          "intensity": "DRK",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "name": "msgsflc",
+      "overlay": "YES",
+      "fields": [
+        {
+          "name": "pgmq",
+          "line": "1",
+          "intensity": "DRK",
+          "length": "0",
+          "protection": "ASKIP",
+          "column": "0",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "msgsfl",
+          "sflctl": "msgsfl",
+          "line": 24,
+          "numberLinesPerRecord": 1,
+          "sflsiz": "0002",
+          "sflpag": "0001",
+          "sfldsp": "YES",
+          "sfldspctl": "YES",
+          "sflend": "YES",
+          "sflinz": "YES",
+          "column": "",
+          "length": "80",
+          "intensity": "NORM",
+          "protection": "ASKIP",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        }
+      ]
+    },
+    {
+      "name": "empty",
+      "overlay": "YES",
+      "fields": [
+        {
+          "name": "",
+          "color": "RED",
+          "initial": "No records to display.",
+          "line": 7,
+          "column": 4,
+          "length": 22,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        }
+      ]
+    }
+  ]
+}

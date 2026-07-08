@@ -1,0 +1,13 @@
+<div [ngStyle]="mapDivStyle()">
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_25 col_01'><span class='default' id='text1'>Confirm Submission? (Y/N)</span>  </div>
+  <div class='lgr_01 col_28'><dynamic-field [id]='"yesno"' [size]=1 [line]=2 [column]=28 (completeEvent)="validate()" [(ngModel)]='yesno'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_35 col_01'><dynamic-field [id]='"messageline"' [size]=35 [line]=4 [column]=1 [(ngModel)]='messageline'></dynamic-field></div>
+</div>
+</div>

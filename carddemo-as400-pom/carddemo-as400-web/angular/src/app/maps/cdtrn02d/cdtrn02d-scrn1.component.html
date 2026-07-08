@@ -1,0 +1,107 @@
+<div [ngStyle]="mapDivStyle()">
+<div class='lgr_col'>
+  <div class='lgr_10 col_01'><dynamic-field [id]='"labelUser"' [size]=10 [line]=1 [column]=1 [(ngModel)]='labelUser'></dynamic-field></div>
+  <div class='lgr_13 col_34'><span class='white' id='text1'>AWS Card Demo</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"date1"' [size]=8 [line]=1 [column]=71 [(ngModel)]='date1'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_10 col_01'><dynamic-field [id]='"pgmname"' [size]=10 [line]=2 [column]=1 [(ngModel)]='pgmname'></dynamic-field></div>
+  <div class='lgr_18 col_31'><dynamic-field [id]='"labelSubmitTransaction"' [size]=18 [line]=2 [column]=31 [(ngModel)]='labelSubmitTransaction'></dynamic-field></div>
+  <div class='lgr_17 col_32'><dynamic-field [id]='"labelViewTransactions"' [size]=17 [line]=2 [column]=32 [(ngModel)]='labelViewTransactions'></dynamic-field></div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"time1"' [size]=8 [line]=2 [column]=71 [edtwrd]='"0  :  :  "' [(ngModel)]='time1'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_16 col_03'><span class='default' id='text2'>Transaction ID :</span>  </div>
+  <div class='lgr_15 col_21'><dynamic-field [id]='"trnid"' [size]=15 [line]=4 [column]=21 [digitNb]='15' [decSize]='0' [(ngModel)]='trnid'></dynamic-field></div>
+  <div class='lgr_08 col_45'><dynamic-field [id]='"labelStatus"' [size]=8 [line]=4 [column]=45 [(ngModel)]='labelStatus'></dynamic-field></div>
+  <div class='lgr_01 col_54'><dynamic-field [id]='"status"' [size]=1 [line]=4 [column]=54 [(ngModel)]='status'></dynamic-field></div>
+  <div class='lgr_20 col_57'><dynamic-field [id]='"statusdtl"' [size]=20 [line]=4 [column]=57 [(ngModel)]='statusdtl'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_16 col_03'><span class='default' id='text3'>Card Number    :</span>  </div>
+  <div class='lgr_19 col_21'><dynamic-field [id]='"cardnum"' [size]=19 [line]=5 [column]=21 [digitNb]='16' [decSize]='0' [edtwrd]='"0    -    -    -    "' [(ngModel)]='cardnum'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_16 col_03'><span class='default' id='text4'>Type Code      :</span>  </div>
+  <div class='lgr_02 col_21'><dynamic-field [id]='"typecd"' [size]=2 [line]=7 [column]=21 [(ngModel)]='typecd'></dynamic-field></div>
+  <div class='lgr_15 col_28'><span class='default' id='text5'>Category Code :</span>  </div>
+  <div class='lgr_04 col_44'><dynamic-field [id]='"categcd"' [size]=4 [line]=7 [column]=44 [justify]='"RIGHT ZERO"' [(ngModel)]='categcd'></dynamic-field></div>
+  <div class='lgr_08 col_53'><span class='default' id='text6'>Source :</span>  </div>
+  <div class='lgr_01 col_62'><dynamic-field [id]='"source"' [size]=1 [line]=7 [column]=62 [(ngModel)]='source'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_16 col_03'><span class='default' id='text7'>Description    :</span>  </div>
+  <div class='lgr_30 col_21'><dynamic-field [id]='"dess"' [size]=30 [line]=9 [column]=21 [isLCAllowed]=true [(ngModel)]='dess'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_16 col_03'><span class='default' id='text8'>Amount         :</span>  </div>
+  <div class='lgr_12 col_21'><dynamic-field [id]='"amountedt"' [size]=12 [line]=10 [column]=21 [(ngModel)]='amountedt'></dynamic-field></div>
+  <div class='lgr_13 col_21'><dynamic-field [id]='"amountdsp"' [size]=13 [line]=10 [column]=21 [(ngModel)]='amountdsp'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_16 col_03'><span class='default' id='text9'>Merchant ID    :</span>  </div>
+  <div class='lgr_09 col_21'><dynamic-field [id]='"merchid"' [size]=9 [line]=12 [column]=21 [digitNb]='9' [decSize]='0' [justify]='"RIGHT ZERO"' [(ngModel)]='merchid'></dynamic-field></div>
+  <div class='lgr_25 col_33'><dynamic-field [id]='"merchname"' [size]=25 [line]=12 [column]=33 [(ngModel)]='merchname'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_22 col_03'><span class='default' id='text10'>Trn Origination Date :</span>  </div>
+  <div class='lgr_10 col_26'><dynamic-field [id]='"origdate"' [size]=10 [line]=14 [column]=26 [(ngModel)]='origdate'></dynamic-field></div>
+  <div class='lgr_18 col_40'><span class='default' id='text11'>Trn Process Date :</span>  </div>
+  <div class='lgr_10 col_59'><dynamic-field [id]='"procdate"' [size]=10 [line]=14 [column]=59 [(ngModel)]='procdate'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_03'><dynamic-field [id]='"labelSubmittedBy"' [size]=14 [line]=16 [column]=3 [(ngModel)]='labelSubmittedBy'></dynamic-field></div>
+  <div class='lgr_10 col_18'><dynamic-field [id]='"usra1"' [size]=10 [line]=16 [column]=18 [(ngModel)]='usra1'></dynamic-field></div>
+  <div class='lgr_03 col_31'><dynamic-field [id]='"labelOn"' [size]=3 [line]=16 [column]=31 [(ngModel)]='labelOn'></dynamic-field></div>
+  <div class='lgr_10 col_35'><dynamic-field [id]='"dtea1"' [size]=10 [line]=16 [column]=35 [digitNb]='8' [decSize]='0' [edtwrd]='"    -  -  "' [(ngModel)]='dtea1'></dynamic-field></div>
+  <div class='lgr_08 col_46'><dynamic-field [id]='"tmea1"' [size]=8 [line]=16 [column]=46 [digitNb]='6' [decSize]='0' [edtwrd]='"0  :  :  "' [(ngModel)]='tmea1'></dynamic-field></div>
+  <div class='lgr_08 col_57'><dynamic-field [id]='"labelProgram"' [size]=8 [line]=16 [column]=57 [(ngModel)]='labelProgram'></dynamic-field></div>
+  <div class='lgr_10 col_66'><dynamic-field [id]='"pgma1"' [size]=10 [line]=16 [column]=66 [(ngModel)]='pgma1'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_03'><dynamic-field [id]='"labelAuthorizedBy"' [size]=14 [line]=17 [column]=3 [(ngModel)]='labelAuthorizedBy'></dynamic-field></div>
+  <div class='lgr_10 col_18'><dynamic-field [id]='"usra2"' [size]=10 [line]=17 [column]=18 [(ngModel)]='usra2'></dynamic-field></div>
+  <div class='lgr_03 col_31'><dynamic-field [id]='"labelOn1"' [size]=3 [line]=17 [column]=31 [(ngModel)]='labelOn1'></dynamic-field></div>
+  <div class='lgr_10 col_35'><dynamic-field [id]='"dtea2"' [size]=10 [line]=17 [column]=35 [digitNb]='8' [decSize]='0' [edtwrd]='"    -  -  "' [(ngModel)]='dtea2'></dynamic-field></div>
+  <div class='lgr_08 col_46'><dynamic-field [id]='"tmea2"' [size]=8 [line]=17 [column]=46 [digitNb]='6' [decSize]='0' [edtwrd]='"0  :  :  "' [(ngModel)]='tmea2'></dynamic-field></div>
+  <div class='lgr_08 col_57'><dynamic-field [id]='"labelProgram1"' [size]=8 [line]=17 [column]=57 [(ngModel)]='labelProgram1'></dynamic-field></div>
+  <div class='lgr_10 col_66'><dynamic-field [id]='"pgma2"' [size]=10 [line]=17 [column]=66 [(ngModel)]='pgma2'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_03'><dynamic-field [id]='"labelReversedBy"' [size]=14 [line]=19 [column]=3 [(ngModel)]='labelReversedBy'></dynamic-field></div>
+  <div class='lgr_10 col_18'><dynamic-field [id]='"usrb1"' [size]=10 [line]=19 [column]=18 [(ngModel)]='usrb1'></dynamic-field></div>
+  <div class='lgr_03 col_31'><dynamic-field [id]='"labelOn2"' [size]=3 [line]=19 [column]=31 [(ngModel)]='labelOn2'></dynamic-field></div>
+  <div class='lgr_10 col_35'><dynamic-field [id]='"dteb1"' [size]=10 [line]=19 [column]=35 [digitNb]='8' [decSize]='0' [edtwrd]='"    -  -  "' [(ngModel)]='dteb1'></dynamic-field></div>
+  <div class='lgr_08 col_46'><dynamic-field [id]='"tmeb1"' [size]=8 [line]=19 [column]=46 [digitNb]='6' [decSize]='0' [edtwrd]='"0  :  :  "' [(ngModel)]='tmeb1'></dynamic-field></div>
+  <div class='lgr_08 col_57'><dynamic-field [id]='"labelProgram2"' [size]=8 [line]=19 [column]=57 [(ngModel)]='labelProgram2'></dynamic-field></div>
+  <div class='lgr_10 col_66'><dynamic-field [id]='"pgmb1"' [size]=10 [line]=19 [column]=66 [(ngModel)]='pgmb1'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_03'><dynamic-field [id]='"labelAuthorizedBy1"' [size]=14 [line]=20 [column]=3 [(ngModel)]='labelAuthorizedBy1'></dynamic-field></div>
+  <div class='lgr_10 col_18'><dynamic-field [id]='"usrb2"' [size]=10 [line]=20 [column]=18 [(ngModel)]='usrb2'></dynamic-field></div>
+  <div class='lgr_03 col_31'><dynamic-field [id]='"labelOn3"' [size]=3 [line]=20 [column]=31 [(ngModel)]='labelOn3'></dynamic-field></div>
+  <div class='lgr_10 col_35'><dynamic-field [id]='"dteb2"' [size]=10 [line]=20 [column]=35 [digitNb]='8' [decSize]='0' [edtwrd]='"    -  -  "' [(ngModel)]='dteb2'></dynamic-field></div>
+  <div class='lgr_08 col_46'><dynamic-field [id]='"tmeb2"' [size]=8 [line]=20 [column]=46 [digitNb]='6' [decSize]='0' [edtwrd]='"0  :  :  "' [(ngModel)]='tmeb2'></dynamic-field></div>
+  <div class='lgr_08 col_57'><dynamic-field [id]='"labelProgram3"' [size]=8 [line]=20 [column]=57 [(ngModel)]='labelProgram3'></dynamic-field></div>
+  <div class='lgr_10 col_66'><dynamic-field [id]='"pgmb2"' [size]=10 [line]=20 [column]=66 [(ngModel)]='pgmb2'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_35 col_01'><dynamic-field [id]='"ftrtext"' [size]=35 [line]=22 [column]=1 [(ngModel)]='ftrtext'></dynamic-field></div>
+</div>
+</div>

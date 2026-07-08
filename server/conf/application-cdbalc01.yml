@@ -1,0 +1,6 @@
+# CDBALC01 - Card Balance Calculation batch job configuration
+# Edit these values and restart Tomcat to apply changes (no rebuild needed)
+cdbalc01:
+  process-start-date: "2025-11-01"
+  process-end-date: "2025-11-30"
+  card-limit: 2000

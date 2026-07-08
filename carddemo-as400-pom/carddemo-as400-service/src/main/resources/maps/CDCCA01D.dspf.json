@@ -1,0 +1,345 @@
+{
+  "format": "dspf",
+  "name": "CDCCA01D",
+  "dspsiz": [
+    "24",
+    "80",
+    "*DS3"
+  ],
+  "ref": "STLIBL/CDCCAP",
+  "indara": "YES",
+  "maps": [
+    {
+      "name": "header1",
+      "fields": [
+        {
+          "name": "",
+          "color": "WHITE",
+          "initial": "AWS CardDemo",
+          "line": 1,
+          "column": 34,
+          "length": 12,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "date1",
+          "date": "YES",
+          "line": 1,
+          "column": 71,
+          "length": 8,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "time1",
+          "time": "YES",
+          "edtwrd": "'0  :  :  '",
+          "line": 2,
+          "column": 71,
+          "length": 8,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelUser",
+          "user": "YES",
+          "line": 2,
+          "column": 1,
+          "length": 10,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "pgmname",
+          "color": "BLUE",
+          "line": 1,
+          "column": 1,
+          "length": 10,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelCardActivityHistory",
+          "initial": "Card Activity History",
+          "hilight": "REVERSE",
+          "line": 2,
+          "column": 30,
+          "length": 21,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "DEFAULT",
+          "initial": "Card Number:",
+          "line": 4,
+          "column": 1,
+          "length": 12,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "cardnum",
+          "initial": "CREDIT CARD NUMBER",
+          "integerSize": 16,
+          "decimalPosition": 0,
+          "color": "WHITE",
+          "edtwrd": "'    -    -    -    '",
+          "line": 4,
+          "column": 14,
+          "numerical": "NUM_STD",
+          "length": 19,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES"
+        },
+        {
+          "name": "labelActivity",
+          "initial": "Activity",
+          "underline": "true",
+          "color": "BLUE",
+          "line": 6,
+          "column": 1,
+          "length": 8,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelDescription",
+          "initial": "Description",
+          "underline": "true",
+          "color": "BLUE",
+          "line": 6,
+          "column": 11,
+          "length": 11,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelUser1",
+          "initial": "User",
+          "underline": "true",
+          "color": "BLUE",
+          "line": 6,
+          "column": 38,
+          "length": 4,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "labelTimestamp",
+          "initial": "Timestamp",
+          "underline": "true",
+          "color": "BLUE",
+          "line": 6,
+          "column": 50,
+          "length": 9,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        }
+      ]
+    },
+    {
+      "name": "sfl1",
+      "sfl": "YES",
+      "sflStartLine": 7,
+      "fields": [
+        {
+          "name": "activity",
+          "initial": "ACTIVITY",
+          "column": 1,
+          "length": 5,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        },
+        {
+          "name": "dess",
+          "initial": "DESCRIPTION",
+          "column": 11,
+          "length": 25,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        },
+        {
+          "name": "ccauser",
+          "initial": "CUS ADD USER",
+          "column": 38,
+          "length": 10,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        },
+        {
+          "name": "ccatmstamp",
+          "initial": "CCA TIME STAMP",
+          "column": 50,
+          "length": 26,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "name": "ctl1",
+      "cf03": [
+        "03",
+        "'Exit'"
+      ],
+      "cf12": [
+        "12",
+        "'Previous'"
+      ],
+      "overlay": "YES",
+      "fields": [
+        {
+          "name": "sfl1",
+          "sflctl": "sfl1",
+          "line": 7,
+          "numberLinesPerRecord": 1,
+          "sflsiz": "9999",
+          "sflpag": "0013",
+          "sfldsp": "YES",
+          "sfldspctl": "YES",
+          "sflclr": "YES",
+          "sflend": "YES",
+          "column": "",
+          "length": "80",
+          "intensity": "NORM",
+          "protection": "ASKIP",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        }
+      ]
+    },
+    {
+      "name": "footer",
+      "overlay": "YES",
+      "fields": [
+        {
+          "name": "",
+          "color": "WHITE",
+          "initial": "------------------------------------------------------------------------------",
+          "line": 21,
+          "column": 1,
+          "length": 78,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "BLUE",
+          "initial": "Enter=Top",
+          "line": 22,
+          "column": 1,
+          "length": 9,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "BLUE",
+          "initial": "F3=Exit",
+          "line": 22,
+          "column": 12,
+          "length": 7,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        },
+        {
+          "name": "",
+          "color": "BLUE",
+          "initial": "F12=Cancel",
+          "line": 22,
+          "column": 21,
+          "length": 10,
+          "protection": "ASKIP",
+          "intensity": "NORM",
+          "num": "NO",
+          "ic": "NO",
+          "fset": "YES",
+          "numerical": "NO"
+        }
+      ]
+    }
+  ]
+}

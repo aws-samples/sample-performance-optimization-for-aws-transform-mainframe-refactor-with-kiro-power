@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Master" pageWidth="1008" pageHeight="612" columnWidth="950" leftMargin="29" rightMargin="29" topMargin="9" bottomMargin="9" uuid="7505bd12-5e11-432c-a12d-1be3e48c9378">
+	<property name="overflow" value="66"/>
+	<import value="com.google.common.collect.*"/>
+	<import value="com.netfective.bluage.gapwalk.runtime.report.ReportLoader"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="loader" class="com.netfective.bluage.gapwalk.runtime.report.ReportLoader" isForPrompting="false"/>
+	<field name="component" class="java.lang.String"/>
+	<field name="bandData" class="java.lang.Object">
+		<fieldDescription><![CDATA[_THIS]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="20">
+			<printWhenExpression><![CDATA["cdrptp-summary".equals($F{component})]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="1008" height="20" uuid="24e31e24-6837-41b2-8050-0c7c9b21f7fc"/>
+				<dataSourceExpression><![CDATA[new JRBeanCollectionDataSource(Lists.newArrayList($F{bandData}))]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{loader}.getCompiled("CDRPTP-SUMMARY")]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="20">
+			<printWhenExpression><![CDATA["cdrptp-header".equals($F{component})]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="1008" height="20" uuid="e9f94d73-b19c-4293-8e23-e74383de9f3f"/>
+				<dataSourceExpression><![CDATA[new JRBeanCollectionDataSource(Lists.newArrayList($F{bandData}))]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{loader}.getCompiled("CDRPTP-HEADER")]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="20">
+			<printWhenExpression><![CDATA["cdrptp-detail".equals($F{component})]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="1008" height="20" uuid="9fdf3282-04c4-4d48-a6ab-7fe96ac1ab14"/>
+				<dataSourceExpression><![CDATA[new JRBeanCollectionDataSource(Lists.newArrayList($F{bandData}))]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{loader}.getCompiled("CDRPTP-DETAIL")]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="20">
+			<printWhenExpression><![CDATA["cdrptp-separator".equals($F{component})]]></printWhenExpression>
+			<subreport>
+				<reportElement x="0" y="0" width="1008" height="20" uuid="951924df-536c-42db-86e2-6b1669405d64"/>
+				<dataSourceExpression><![CDATA[new JRBeanCollectionDataSource(Lists.newArrayList($F{bandData}))]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{loader}.getCompiled("CDRPTP-SEPARATOR")]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="1">
+			<printWhenExpression><![CDATA["page-break".equals($F{component})]]></printWhenExpression>
+			<break>
+				<reportElement x="0" y="0" width="0" height="1" uuid="64579a0e-9eb7-4dc9-8edf-167b5908e232"/>
+			</break>
+		</band>
+	</detail>
+</jasperReport>

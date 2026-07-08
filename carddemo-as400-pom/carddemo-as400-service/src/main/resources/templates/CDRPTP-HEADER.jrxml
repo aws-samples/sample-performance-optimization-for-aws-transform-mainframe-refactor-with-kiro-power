@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="HEADER" pageWidth="560" pageHeight="20" columnWidth="560" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="3fafc26c-a407-4476-a92e-38ae0cf321c3">
+	<property name="lines.per.record" value="1"/>
+	<style name="FONTID_11" fontName="Monospaced" fontSize="10" isBold="false" isItalic="false" pdfFontName="Courier" isPdfEmbedded="false"/>
+	<detail>
+		<band height="20">
+			<staticText>
+				<reportElement style="FONTID_11" x="-7" y="0" width="14" height="20" uuid="9af8685b-8da3-4c27-8dc3-6a83cfae56e0"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="7" y="0" width="98" height="20" uuid="bb447c67-f57e-4dca-a5c5-99129d712bfa"/>
+				<text><![CDATA[Account]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="126" y="0" width="14" height="20" uuid="982da622-fb53-404d-a067-3260f7e058bd"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="140" y="0" width="112" height="20" uuid="5ec10685-7965-4077-bd21-795251570c09"/>
+				<text><![CDATA[Customer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="266" y="0" width="14" height="20" uuid="86a36d98-288a-4661-ba18-92bb131f51cc"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="280" y="0" width="56" height="20" uuid="9d223b19-a851-4247-8a06-aa9f15598ebf"/>
+				<text><![CDATA[Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="406" y="0" width="14" height="20" uuid="50b3f157-dc5d-4f5c-ace0-2a632204e582"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="420" y="0" width="70" height="20" uuid="ea64d5ff-f5d3-4b2a-9c47-c8504676d096"/>
+				<text><![CDATA[Check]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="546" y="0" width="14" height="20" uuid="33ce44a8-6d46-4ae3-be5d-afc1c9acded2"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

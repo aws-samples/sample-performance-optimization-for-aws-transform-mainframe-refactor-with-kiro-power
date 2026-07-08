@@ -1,0 +1,1090 @@
+{
+  "type": "ARRAY",
+  "objects": [
+    {
+      "type": "Table",
+      "name": "CDACTP",
+      "recordName": "cdactpr",
+      "fields": [
+        {
+          "name": "acctnum",
+          "legacyType": "Packed",
+          "comment": "'ACCOUNT NUMBER'",
+          "length": 12,
+          "decimalPositions": 0
+        },
+        {
+          "name": "active",
+          "legacyType": "Character",
+          "comment": "'ACCOUNT ACTIVE STATUS'",
+          "length": 1,
+          "decimalPositions": 0
+        },
+        {
+          "name": "opendate",
+          "legacyType": "Date",
+          "comment": "'OPEN DATE'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "expirydate",
+          "legacyType": "Date",
+          "comment": "'EXPIRY DATE'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "credlimit",
+          "legacyType": "Packed",
+          "comment": "'CREDIT LIMIT'",
+          "length": 9,
+          "decimalPositions": 2
+        },
+        {
+          "name": "cashlimit",
+          "legacyType": "Packed",
+          "comment": "'CASH LIMIT'",
+          "length": 9,
+          "decimalPositions": 2
+        },
+        {
+          "name": "balance",
+          "legacyType": "Packed",
+          "comment": "'ACCOUNT BALANCE'",
+          "length": 9,
+          "decimalPositions": 2
+        },
+        {
+          "name": "curcredit",
+          "legacyType": "Packed",
+          "comment": "'CURRENT CREDIT'",
+          "length": 9,
+          "decimalPositions": 2
+        },
+        {
+          "name": "curdebit",
+          "legacyType": "Packed",
+          "comment": "'CURRENT DEBIT'",
+          "length": 9,
+          "decimalPositions": 2
+        },
+        {
+          "name": "acctgrp",
+          "legacyType": "Character",
+          "comment": "'ACCOUNT GROUP'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "pricustid",
+          "legacyType": "Packed",
+          "comment": "'PRIMARY CUSTOMER ID'",
+          "length": 9,
+          "decimalPositions": 0
+        },
+        {
+          "name": "seccustid",
+          "legacyType": "Packed",
+          "comment": "'SECONDARY CUSTOMER ID'",
+          "length": 9,
+          "decimalPositions": 0
+        },
+        {
+          "name": "actcrtdt",
+          "legacyType": "Packed",
+          "comment": "'CCM ADD DATE'",
+          "length": 7,
+          "decimalPositions": 0
+        },
+        {
+          "name": "actcrttm",
+          "legacyType": "Packed",
+          "comment": "'CCM ADD TIME'",
+          "length": 6,
+          "decimalPositions": 0
+        },
+        {
+          "name": "actcrtusr",
+          "legacyType": "Character",
+          "comment": "'CCM ADD USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "actcrtpgm",
+          "legacyType": "Character",
+          "comment": "'CCM ADD PROGRAM'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "actchgdt",
+          "legacyType": "Packed",
+          "comment": "'CCM CHANGE DATE'",
+          "length": 7,
+          "decimalPositions": 0
+        },
+        {
+          "name": "actchgtm",
+          "legacyType": "Packed",
+          "comment": "'CCM CHANGE DATE'",
+          "length": 6,
+          "decimalPositions": 0
+        },
+        {
+          "name": "actchgusr",
+          "legacyType": "Character",
+          "comment": "'CCM CHANGE USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "actchgpgm",
+          "legacyType": "Character",
+          "comment": "'CCM CHANGE PROGRAM'",
+          "length": 10,
+          "decimalPositions": 0
+        }
+      ]
+    },
+    {
+      "tables": [
+        "CDACTP"
+      ],
+      "type": "View",
+      "name": "CDACTR01",
+      "recordName": "cdactpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDACTP"
+      ],
+      "type": "View",
+      "name": "CDACTR02",
+      "recordName": "cdactpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDACTP"
+      ],
+      "type": "View",
+      "name": "CDACTR03",
+      "recordName": "cdactpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDACTP"
+      ],
+      "type": "View",
+      "name": "CDACTR04",
+      "recordName": "cdactpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDACTP"
+      ],
+      "type": "View",
+      "name": "CDACTU01",
+      "recordName": "cdactpr",
+      "fields": []
+    },
+    {
+      "type": "Table",
+      "name": "CDAUTP",
+      "recordName": "cdautpr",
+      "fields": [
+        {
+          "name": "authid",
+          "legacyType": "Packed",
+          "comment": "'AUTHORIZATION ID'",
+          "length": 18,
+          "decimalPositions": 0
+        },
+        {
+          "name": "trnid",
+          "legacyType": "Packed",
+          "comment": "'TRANSACTION ID'",
+          "length": 15,
+          "decimalPositions": 0
+        },
+        {
+          "name": "cardnum",
+          "legacyType": "Packed",
+          "comment": "'CREDIT CARD NUMBER'",
+          "length": 16,
+          "decimalPositions": 0
+        },
+        {
+          "name": "response",
+          "legacyType": "Character",
+          "comment": "'AUTH RESPONSE'",
+          "length": 1,
+          "decimalPositions": 0
+        },
+        {
+          "name": "rspreason",
+          "legacyType": "Character",
+          "comment": "'AUTH RESP REASON'",
+          "length": 30,
+          "decimalPositions": 0
+        },
+        {
+          "name": "fraudflag",
+          "legacyType": "Character",
+          "comment": "'FRAUD FLAG'",
+          "length": 1,
+          "decimalPositions": 0
+        },
+        {
+          "name": "authdate",
+          "legacyType": "Date",
+          "comment": "'AUTH DATE'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "authtime",
+          "legacyType": "Time",
+          "comment": "'AUTH TIME'",
+          "length": 8,
+          "decimalPositions": 0
+        },
+        {
+          "name": "authuser",
+          "legacyType": "Character",
+          "comment": "'AUTH USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "authpgm",
+          "legacyType": "Character",
+          "comment": "'AUTH PROGRAM'",
+          "length": 10,
+          "decimalPositions": 0
+        }
+      ]
+    },
+    {
+      "tables": [
+        "CDAUTP"
+      ],
+      "type": "View",
+      "name": "CDAUTR01",
+      "recordName": "cdautpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDAUTP"
+      ],
+      "type": "View",
+      "name": "CDAUTR02",
+      "recordName": "cdautpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDAUTP"
+      ],
+      "type": "View",
+      "name": "CDAUTR03",
+      "recordName": "cdautpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDAUTP"
+      ],
+      "type": "View",
+      "name": "CDAUTU01",
+      "recordName": "cdautpr",
+      "fields": []
+    },
+    {
+      "refFile": "CDCCMP",
+      "type": "Table",
+      "name": "CDCCAP",
+      "recordName": "cdccapr",
+      "fields": [
+        {
+          "name": "cardnum",
+          "legacyType": "Packed",
+          "comment": "'CREDIT CARD NUMBER'",
+          "length": 16,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ccaseqno",
+          "legacyType": "Packed",
+          "comment": "'CC SEQ NUMBER'",
+          "length": 4,
+          "decimalPositions": 0
+        },
+        {
+          "name": "activity",
+          "legacyType": "Character",
+          "comment": "'ACTIVITY'",
+          "length": 5,
+          "decimalPositions": 0
+        },
+        {
+          "name": "dess",
+          "legacyType": "Character",
+          "comment": "'DESCRIPTION'",
+          "length": 25,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ccauser",
+          "legacyType": "Character",
+          "comment": "'CCA USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ccatmstamp",
+          "legacyType": "Timestamp",
+          "comment": "'CCA TIME STAMP'",
+          "length": 26,
+          "decimalPositions": 0
+        }
+      ]
+    },
+    {
+      "tables": [
+        "CDCCAP"
+      ],
+      "type": "View",
+      "name": "CDCCAR01",
+      "recordName": "cdccapr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDCCAP"
+      ],
+      "type": "View",
+      "name": "CDCCAU01",
+      "recordName": "cdccapr",
+      "fields": []
+    },
+    {
+      "refFile": "CDCUSP",
+      "type": "Table",
+      "name": "CDCCMP",
+      "recordName": "cdccmpr",
+      "fields": [
+        {
+          "name": "cardnum",
+          "legacyType": "Packed",
+          "comment": "'CREDIT CARD NUMBER'",
+          "length": 16,
+          "decimalPositions": 0
+        },
+        {
+          "name": "custid",
+          "legacyType": "Packed",
+          "comment": "'CUSTOMER ID'",
+          "length": 9,
+          "decimalPositions": 0
+        },
+        {
+          "name": "acctnum",
+          "legacyType": "Packed",
+          "comment": "'ACCOUNT NUMBER'",
+          "length": 12,
+          "decimalPositions": 0
+        },
+        {
+          "name": "primarysec",
+          "legacyType": "Character",
+          "comment": "'CC PRIMARY OR SECONDARY'",
+          "length": 1,
+          "decimalPositions": 0
+        },
+        {
+          "name": "name",
+          "legacyType": "Character",
+          "comment": "'NAME ON CC'",
+          "length": 25,
+          "decimalPositions": 0
+        },
+        {
+          "name": "expirymo",
+          "legacyType": "Packed",
+          "comment": "'CC EXPIRY MONTH'",
+          "length": 2,
+          "decimalPositions": 0
+        },
+        {
+          "name": "expiryyr",
+          "legacyType": "Packed",
+          "comment": "'CC EXPIRY YEAR'",
+          "length": 4,
+          "decimalPositions": 0
+        },
+        {
+          "name": "cvv",
+          "legacyType": "Zoned",
+          "comment": "'CC CVV'",
+          "length": 3,
+          "decimalPositions": 0
+        },
+        {
+          "name": "status",
+          "legacyType": "Character",
+          "comment": "'CC STATUS'",
+          "length": 1,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ccmcrtdt",
+          "legacyType": "Packed",
+          "comment": "'CCM ADD DATE'",
+          "length": 7,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ccmcrttm",
+          "legacyType": "Packed",
+          "comment": "'CCM ADD TIME'",
+          "length": 6,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ccmcrtusr",
+          "legacyType": "Character",
+          "comment": "'CCM ADD USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ccmcrtpgm",
+          "legacyType": "Character",
+          "comment": "'CCM ADD PROGRAM'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ccmchgdt",
+          "legacyType": "Packed",
+          "comment": "'CCM CHANGE DATE'",
+          "length": 7,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ccmchgtm",
+          "legacyType": "Packed",
+          "comment": "'CCM CHANGE TIME'",
+          "length": 6,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ccmchgusr",
+          "legacyType": "Character",
+          "comment": "'CCM CHANGE USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ccmchgpgm",
+          "legacyType": "Character",
+          "comment": "'CCM CHANGE PROGRAM'",
+          "length": 10,
+          "decimalPositions": 0
+        }
+      ]
+    },
+    {
+      "tables": [
+        "CDCCMP"
+      ],
+      "type": "View",
+      "name": "CDCCMR01",
+      "recordName": "cdccmpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDCCMP"
+      ],
+      "type": "View",
+      "name": "CDCCMR02",
+      "recordName": "cdccmpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDCCMP"
+      ],
+      "type": "View",
+      "name": "CDCCMU01",
+      "recordName": "cdccmpr",
+      "fields": []
+    },
+    {
+      "type": "Table",
+      "name": "CDCUSP",
+      "recordName": "cdcuspr",
+      "fields": [
+        {
+          "name": "custid",
+          "legacyType": "Packed",
+          "comment": "'CUSTOMER ID'",
+          "length": 9,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ssn",
+          "legacyType": "Packed",
+          "comment": "'SOCIAL SECURITY NUMBER'",
+          "length": 9,
+          "decimalPositions": 0
+        },
+        {
+          "name": "birthday",
+          "legacyType": "Packed",
+          "comment": "'BIRTH DAY'",
+          "length": 2,
+          "decimalPositions": 0
+        },
+        {
+          "name": "birthmo",
+          "legacyType": "Packed",
+          "comment": "'BIRTH MONTH'",
+          "length": 2,
+          "decimalPositions": 0
+        },
+        {
+          "name": "birthyr",
+          "legacyType": "Packed",
+          "comment": "'BIRTH YEAR'",
+          "length": 4,
+          "decimalPositions": 0
+        },
+        {
+          "name": "gender",
+          "legacyType": "Character",
+          "comment": "'GENDER'",
+          "length": 1,
+          "decimalPositions": 0
+        },
+        {
+          "name": "ficoscore",
+          "legacyType": "Packed",
+          "comment": "'FICO SCORE'",
+          "length": 3,
+          "decimalPositions": 0
+        },
+        {
+          "name": "firstname",
+          "legacyType": "Character",
+          "comment": "'FIRST NAME'",
+          "length": 25,
+          "decimalPositions": 0
+        },
+        {
+          "name": "midname",
+          "legacyType": "Character",
+          "comment": "'MIDDLE NAME'",
+          "length": 25,
+          "decimalPositions": 0
+        },
+        {
+          "name": "lastname",
+          "legacyType": "Character",
+          "comment": "'LAST NAME'",
+          "length": 25,
+          "decimalPositions": 0
+        },
+        {
+          "name": "address1",
+          "legacyType": "Character",
+          "comment": "'ADDRESS LINE 1'",
+          "length": 40,
+          "decimalPositions": 0
+        },
+        {
+          "name": "address2",
+          "legacyType": "Character",
+          "comment": "'ADDRESS LINE 2'",
+          "length": 40,
+          "decimalPositions": 0
+        },
+        {
+          "name": "city",
+          "legacyType": "Character",
+          "comment": "'CITY'",
+          "length": 20,
+          "decimalPositions": 0
+        },
+        {
+          "name": "state",
+          "legacyType": "Character",
+          "comment": "'STATE'",
+          "length": 2,
+          "decimalPositions": 0
+        },
+        {
+          "name": "zip",
+          "legacyType": "Packed",
+          "comment": "'ZIP CODE'",
+          "length": 5,
+          "decimalPositions": 0
+        },
+        {
+          "name": "country",
+          "legacyType": "Character",
+          "comment": "'COUNTRY'",
+          "length": 3,
+          "decimalPositions": 0
+        },
+        {
+          "name": "phone1",
+          "legacyType": "Packed",
+          "comment": "'PHONE NUMBER 1'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "phone2",
+          "legacyType": "Packed",
+          "comment": "'PHONE NUMBER 2'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "cuscrtdt",
+          "legacyType": "Packed",
+          "comment": "'CUS ADD DATE'",
+          "length": 7,
+          "decimalPositions": 0
+        },
+        {
+          "name": "cuscrttm",
+          "legacyType": "Packed",
+          "comment": "'CUS ADD TIME'",
+          "length": 6,
+          "decimalPositions": 0
+        },
+        {
+          "name": "cuscrtusr",
+          "legacyType": "Character",
+          "comment": "'CUS ADD USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "cuscrtpgm",
+          "legacyType": "Character",
+          "comment": "'CUS ADD PROGRAM'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "cuschgdt",
+          "legacyType": "Packed",
+          "comment": "'CUS CHANGE DATE'",
+          "length": 7,
+          "decimalPositions": 0
+        },
+        {
+          "name": "cuschgtm",
+          "legacyType": "Packed",
+          "comment": "'CUS CHANGE TIME'",
+          "length": 6,
+          "decimalPositions": 0
+        },
+        {
+          "name": "cuschgusr",
+          "legacyType": "Character",
+          "comment": "'CUS CHANGE USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "cuschgpgm",
+          "legacyType": "Character",
+          "comment": "'CUS CHANGE PROGRAM'",
+          "length": 10,
+          "decimalPositions": 0
+        }
+      ]
+    },
+    {
+      "tables": [
+        "CDCUSP"
+      ],
+      "type": "View",
+      "name": "CDCUSR01",
+      "recordName": "cdcuspr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDCUSP"
+      ],
+      "type": "View",
+      "name": "CDCUSU01",
+      "recordName": "cdcuspr",
+      "fields": []
+    },
+    {
+      "type": "Table",
+      "name": "CDMMF001P",
+      "recordName": "cdmmf001p",
+      "fields": [
+        {
+          "name": "fldmmf1",
+          "legacyType": "Character",
+          "comment": "'FIELD 1'",
+          "length": 200,
+          "decimalPositions": 0
+        }
+      ]
+    },
+    {
+      "type": "Table",
+      "name": "CDSTCP",
+      "recordName": "cdstapr",
+      "fields": [
+        {
+          "name": "statecd",
+          "legacyType": "Character",
+          "comment": "'STATE CODE'",
+          "length": 2,
+          "decimalPositions": 0
+        },
+        {
+          "name": "statenm",
+          "legacyType": "Character",
+          "comment": "'STATE NAME'",
+          "length": 30,
+          "decimalPositions": 0
+        },
+        {
+          "name": "countrycd",
+          "legacyType": "Character",
+          "comment": "'COUNTRY CODE'",
+          "length": 3,
+          "decimalPositions": 0
+        },
+        {
+          "name": "countrynm",
+          "legacyType": "Character",
+          "comment": "'COUNTRY NAME'",
+          "length": 30,
+          "decimalPositions": 0
+        }
+      ]
+    },
+    {
+      "type": "Table",
+      "name": "CDTRNP",
+      "recordName": "cdtrnpr",
+      "fields": [
+        {
+          "name": "trnid",
+          "legacyType": "Packed",
+          "comment": "'TRANSACTION ID'",
+          "length": 15,
+          "decimalPositions": 0
+        },
+        {
+          "name": "cardnum",
+          "legacyType": "Packed",
+          "comment": "'CREDIT CARD NUMBER'",
+          "length": 16,
+          "decimalPositions": 0
+        },
+        {
+          "name": "typecd",
+          "legacyType": "Character",
+          "comment": "'TYPE CODE'",
+          "length": 2,
+          "decimalPositions": 0
+        },
+        {
+          "name": "categcd",
+          "legacyType": "Character",
+          "comment": "'CATEGORY CODE'",
+          "length": 4,
+          "decimalPositions": 0
+        },
+        {
+          "name": "source",
+          "legacyType": "Character",
+          "comment": "'SOURCE'",
+          "length": 1,
+          "decimalPositions": 0
+        },
+        {
+          "name": "dess",
+          "legacyType": "Character",
+          "comment": "'DESCRIPTION'",
+          "length": 30,
+          "decimalPositions": 0
+        },
+        {
+          "name": "amount",
+          "legacyType": "Zoned",
+          "comment": "'AMOUNT'",
+          "length": 11,
+          "decimalPositions": 2
+        },
+        {
+          "name": "origdate",
+          "legacyType": "Date",
+          "comment": "'ORIGINATION DATE'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "procdate",
+          "legacyType": "Date",
+          "comment": "'PROCESS DATE'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "merchid",
+          "legacyType": "Packed",
+          "comment": "'MERCHANT ID'",
+          "length": 9,
+          "decimalPositions": 0
+        },
+        {
+          "name": "trnstatus",
+          "legacyType": "Character",
+          "comment": "'TRANSACTION STATUS'",
+          "length": 1,
+          "decimalPositions": 0
+        },
+        {
+          "name": "trncrtdt",
+          "legacyType": "Packed",
+          "comment": "'TRN ADD DATE'",
+          "length": 7,
+          "decimalPositions": 0
+        },
+        {
+          "name": "trncrttm",
+          "legacyType": "Packed",
+          "comment": "'TRN ADD TIME'",
+          "length": 6,
+          "decimalPositions": 0
+        },
+        {
+          "name": "trncrtusr",
+          "legacyType": "Character",
+          "comment": "'TRN ADD USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "trncrtpgm",
+          "legacyType": "Character",
+          "comment": "'TRN ADD PROGRAM'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "trnchgdt",
+          "legacyType": "Packed",
+          "comment": "'TRN CHANGE DATE'",
+          "length": 7,
+          "decimalPositions": 0
+        },
+        {
+          "name": "trnchgtm",
+          "legacyType": "Packed",
+          "comment": "'TRN CHANGE TIME'",
+          "length": 6,
+          "decimalPositions": 0
+        },
+        {
+          "name": "trnchgusr",
+          "legacyType": "Character",
+          "comment": "'TRN CHANGE USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "trnchgpgm",
+          "legacyType": "Character",
+          "comment": "'TRN CHANGE PROGRAM'",
+          "length": 10,
+          "decimalPositions": 0
+        }
+      ]
+    },
+    {
+      "tables": [
+        "CDTRNP"
+      ],
+      "type": "View",
+      "name": "CDTRNR01",
+      "recordName": "cdtrnpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDTRNP"
+      ],
+      "type": "View",
+      "name": "CDTRNR02",
+      "recordName": "cdtrnpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDTRNP"
+      ],
+      "type": "View",
+      "name": "CDTRNU01",
+      "recordName": "cdtrnpr",
+      "fields": []
+    },
+    {
+      "type": "Table",
+      "name": "CDUSRP",
+      "recordName": "cdusrpr",
+      "text": "'CardDemo - Users (SQL)'",
+      "fields": [
+        {
+          "name": "userid",
+          "legacyType": "Character",
+          "comment": "'USER ID'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "firstname",
+          "legacyType": "Character",
+          "comment": "'FIRST NAME'",
+          "length": 20,
+          "decimalPositions": 0
+        },
+        {
+          "name": "lastname",
+          "legacyType": "Character",
+          "comment": "'LAST NAME'",
+          "length": 20,
+          "decimalPositions": 0
+        },
+        {
+          "name": "type",
+          "legacyType": "Character",
+          "comment": "'USER TYPE'",
+          "length": 1,
+          "decimalPositions": 0
+        },
+        {
+          "name": "email",
+          "legacyType": "Character",
+          "comment": "",
+          "length": 50,
+          "decimalPositions": 0
+        },
+        {
+          "name": "status",
+          "legacyType": "Character",
+          "comment": "",
+          "length": 1,
+          "decimalPositions": 0
+        },
+        {
+          "name": "usrcrtdt",
+          "legacyType": "Packed",
+          "comment": "'TRN ADD DATE'",
+          "length": 7,
+          "decimalPositions": 0
+        },
+        {
+          "name": "usrcrttm",
+          "legacyType": "Packed",
+          "comment": "'TRN ADD TIME'",
+          "length": 6,
+          "decimalPositions": 0
+        },
+        {
+          "name": "usrcrtusr",
+          "legacyType": "Character",
+          "comment": "'TRN ADD USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "usrcrtpgm",
+          "legacyType": "Character",
+          "comment": "'TRN ADD PROGRAM'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "usrchgdt",
+          "legacyType": "Packed",
+          "comment": "'TRN CHANGE DATE'",
+          "length": 7,
+          "decimalPositions": 0
+        },
+        {
+          "name": "usrchgtm",
+          "legacyType": "Packed",
+          "comment": "'TRN CHANGE TIME'",
+          "length": 6,
+          "decimalPositions": 0
+        },
+        {
+          "name": "usrchgusr",
+          "legacyType": "Character",
+          "comment": "'TRN CHANGE USER'",
+          "length": 10,
+          "decimalPositions": 0
+        },
+        {
+          "name": "usrchgpgm",
+          "legacyType": "Character",
+          "comment": "'TRN CHANGE PROGRAM'",
+          "length": 10,
+          "decimalPositions": 0
+        }
+      ]
+    },
+    {
+      "tables": [
+        "CDUSRP"
+      ],
+      "type": "View",
+      "name": "CDUSRR01",
+      "recordName": "cdusrpr",
+      "text": "'CardDemo - Key by User ID (SQL)'",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDUSRP"
+      ],
+      "type": "View",
+      "name": "CDUSRR02",
+      "recordName": "cdusrpr",
+      "fields": []
+    },
+    {
+      "tables": [
+        "CDUSRP"
+      ],
+      "type": "View",
+      "name": "CDUSRU01",
+      "recordName": "cdusrpr",
+      "text": "'CardDemo - Update Index (SQL)'",
+      "fields": []
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+<div [ngStyle]="mapDivStyle()">
+<div class='lgr_col'>
+  <div class='lgr_10 col_01'><dynamic-field [id]='"pgmname"' [size]=10 [line]=1 [column]=1 [(ngModel)]='pgmname'></dynamic-field></div>
+  <div class='lgr_13 col_34'><span class='white' id='text1'>AWS Card Demo</span>  </div>
+  <div class='lgr_08 col_69'><dynamic-field [id]='"date1"' [size]=8 [line]=1 [column]=69 [(ngModel)]='date1'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_10 col_01'><dynamic-field [id]='"labelUser"' [size]=10 [line]=2 [column]=1 [(ngModel)]='labelUser'></dynamic-field></div>
+  <div class='lgr_12 col_34'><dynamic-field [id]='"labelEditAccount"' [size]=12 [line]=2 [column]=34 [(ngModel)]='labelEditAccount'></dynamic-field></div>
+  <div class='lgr_12 col_34'><dynamic-field [id]='"labelViewAccount"' [size]=12 [line]=2 [column]=34 [(ngModel)]='labelViewAccount'></dynamic-field></div>
+  <div class='lgr_11 col_35'><dynamic-field [id]='"labelAddAccount"' [size]=11 [line]=2 [column]=35 [(ngModel)]='labelAddAccount'></dynamic-field></div>
+  <div class='lgr_08 col_69'><dynamic-field [id]='"time1"' [size]=8 [line]=2 [column]=69 [edtwrd]='"0  :  :  "' [(ngModel)]='time1'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text2'>Account Number        :</span>  </div>
+  <div class='lgr_12 col_28'><dynamic-field [id]='"acctnum"' [size]=12 [line]=4 [column]=28 [(ngModel)]='acctnum'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text3'>Opened                :</span>  </div>
+  <div class='lgr_10 col_28'><dynamic-field [id]='"opendate"' [size]=10 [line]=5 [column]=28 [(ngModel)]='opendate'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text4'>Expiry                :</span>  </div>
+  <div class='lgr_10 col_28'><dynamic-field [id]='"expirydate"' [size]=10 [line]=6 [column]=28 [(ngModel)]='expirydate'></dynamic-field></div>
+  <div class='lgr_16 col_47'><dynamic-field [id]='"labelAccountStatus"' [size]=16 [line]=6 [column]=47 [(ngModel)]='labelAccountStatus'></dynamic-field></div>
+  <div class='lgr_08 col_64'><dynamic-field [id]='"status"' [size]=8 [line]=6 [column]=64 [(ngModel)]='status'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text5'>Primary Customer ID   :</span>  </div>
+  <div class='lgr_09 col_28'><dynamic-field [id]='"pricustid"' [size]=9 [line]=8 [column]=28 [(ngModel)]='pricustid'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text6'>Secondary Customer ID :</span>  </div>
+  <div class='lgr_09 col_28'><dynamic-field [id]='"seccustid"' [size]=9 [line]=9 [column]=28 [(ngModel)]='seccustid'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text7'>Account Group         :</span>  </div>
+  <div class='lgr_15 col_28'><dynamic-field [id]='"acctgrp"' [size]=15 [line]=10 [column]=28 [(ngModel)]='acctgrp'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text8'>Credit Limit          :</span>  </div>
+  <div class='lgr_10 col_28'><dynamic-field [id]='"credlimit"' [size]=10 [line]=12 [column]=28 [(ngModel)]='credlimit'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><span class='default' id='text9'>Cash Credit Limit     :</span>  </div>
+  <div class='lgr_10 col_28'><dynamic-field [id]='"cashlimit"' [size]=10 [line]=13 [column]=28 [(ngModel)]='cashlimit'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><dynamic-field [id]='"labelCurrentBalance"' [size]=23 [line]=15 [column]=3 [(ngModel)]='labelCurrentBalance'></dynamic-field></div>
+  <div class='lgr_10 col_28'><dynamic-field [id]='"balance"' [size]=10 [line]=15 [column]=28 [(ngModel)]='balance'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><dynamic-field [id]='"labelCurrentCycleCredit"' [size]=23 [line]=16 [column]=3 [(ngModel)]='labelCurrentCycleCredit'></dynamic-field></div>
+  <div class='lgr_10 col_28'><dynamic-field [id]='"curcredit"' [size]=10 [line]=16 [column]=28 [(ngModel)]='curcredit'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_23 col_03'><dynamic-field [id]='"labelCurrentCycleDebit"' [size]=23 [line]=17 [column]=3 [(ngModel)]='labelCurrentCycleDebit'></dynamic-field></div>
+  <div class='lgr_10 col_28'><dynamic-field [id]='"curdebit"' [size]=10 [line]=17 [column]=28 [(ngModel)]='curdebit'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_11 col_03'><dynamic-field [id]='"labelCreatedBy"' [size]=11 [line]=19 [column]=3 [(ngModel)]='labelCreatedBy'></dynamic-field></div>
+  <div class='lgr_10 col_15'><dynamic-field [id]='"actcrtusr"' [size]=10 [line]=19 [column]=15 [(ngModel)]='actcrtusr'></dynamic-field></div>
+  <div class='lgr_03 col_28'><dynamic-field [id]='"labelOn"' [size]=3 [line]=19 [column]=28 [(ngModel)]='labelOn'></dynamic-field></div>
+  <div class='lgr_10 col_32'><dynamic-field [id]='"actcrtdt"' [size]=10 [line]=19 [column]=32 [digitNb]='8' [decSize]='0' [edtwrd]='"    -  -  "' [(ngModel)]='actcrtdt'></dynamic-field></div>
+  <div class='lgr_08 col_43'><dynamic-field [id]='"actcrttm"' [size]=8 [line]=19 [column]=43 [digitNb]='6' [decSize]='0' [edtwrd]='"0  :  :  "' [(ngModel)]='actcrttm'></dynamic-field></div>
+  <div class='lgr_08 col_54'><dynamic-field [id]='"labelProgram"' [size]=8 [line]=19 [column]=54 [(ngModel)]='labelProgram'></dynamic-field></div>
+  <div class='lgr_10 col_63'><dynamic-field [id]='"actcrtpgm"' [size]=10 [line]=19 [column]=63 [(ngModel)]='actcrtpgm'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_11 col_03'><dynamic-field [id]='"labelUpdatedBy"' [size]=11 [line]=20 [column]=3 [(ngModel)]='labelUpdatedBy'></dynamic-field></div>
+  <div class='lgr_10 col_15'><dynamic-field [id]='"actchgusr"' [size]=10 [line]=20 [column]=15 [(ngModel)]='actchgusr'></dynamic-field></div>
+  <div class='lgr_03 col_28'><dynamic-field [id]='"labelOn1"' [size]=3 [line]=20 [column]=28 [(ngModel)]='labelOn1'></dynamic-field></div>
+  <div class='lgr_10 col_32'><dynamic-field [id]='"actchgdt"' [size]=10 [line]=20 [column]=32 [digitNb]='8' [decSize]='0' [edtwrd]='"    -  -  "' [(ngModel)]='actchgdt'></dynamic-field></div>
+  <div class='lgr_08 col_43'><dynamic-field [id]='"actchgtm"' [size]=8 [line]=20 [column]=43 [digitNb]='6' [decSize]='0' [edtwrd]='"0  :  :  "' [(ngModel)]='actchgtm'></dynamic-field></div>
+  <div class='lgr_08 col_54'><dynamic-field [id]='"labelProgram1"' [size]=8 [line]=20 [column]=54 [(ngModel)]='labelProgram1'></dynamic-field></div>
+  <div class='lgr_10 col_63'><dynamic-field [id]='"actchgpgm"' [size]=10 [line]=20 [column]=63 [(ngModel)]='actchgpgm'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_07 col_01'><span class='blue' id='text10'>F3=Exit</span>  </div>
+  <div class='lgr_10 col_10'><span class='blue' id='text11'>F12=Cancel</span>  </div>
+</div>
+</div>

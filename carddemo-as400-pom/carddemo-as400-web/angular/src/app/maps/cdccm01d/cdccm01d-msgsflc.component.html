@@ -1,0 +1,57 @@
+<div [ngStyle]="mapDivStyle()">
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div [ngClass]="displaySfl()">
+	<app-table #table [id]='"msgsfl"' [rows]='msgsfl' [nbDisplayedEntries]='1' [nbLinesByRow]='1'>
+		<ng-template let-i>
+			<div class='lgr_col split'>
+				<cdccm01d-msgsfl *ngIf="msgsfl.length > i" [(msgsfl)]='msgsfl[i]' [index]='i'></cdccm01d-msgsfl>
+			</div>
+		</ng-template>
+	</app-table>
+</div>
+</div>

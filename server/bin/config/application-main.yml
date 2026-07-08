@@ -1,0 +1,112 @@
+report:
+  output:
+    path:
+      template: "Reports/{PROGID}"
+    name:
+      template: "{PRINTERNAME}_{DATE}{TIME}"
+    name.override:
+      template: "{PRINTERNAME}-{USRDTA}-{DATE}{TIME}"
+    jobNumber:
+      default: "000000"
+    jobName:
+      default: "Interactive"
+    time:
+      format: HHmmss
+    date:
+      format: yyyyMMdd
+reportFormat: PDF
+
+##############################
+##### TASK EXECUTOR       ####
+##############################
+taskExecutor: 
+  corePoolSize: 5
+  maxPoolSize: 200
+  queueCapacity: 0
+  allowCoreThreadTimeOut: false
+  
+##############################
+##### PROGRAM NOT FOUND   ####
+##############################
+stopExecutionWhenProgNotFound: true
+
+######################################################
+#####  DISP DEFAULT VALUE (to be removed one day) ####
+######################################################
+defaultKeepExistingFiles: true
+
+#############################################################################
+#####  THRU FILE BUILDERS WRITES INTO DEDICATED LOGGER INSTEAD OF SYSOUT ####
+#############################################################################
+#file.stdoutIntoLogger: false
+
+#####################################
+#####  JOBQUEUE CONFIGURATION    ####
+#####################################
+jobqueue:
+  api.enabled: false
+  impl: none # possible values: quartz, none
+  logging.quartz.jobDiscriminator: none # possible values: none or template
+  interrupt.delay: 30 # maximum 30 seconds
+  interrupt.standby: false	# whether to put scheduler in standby mode after all jobs successfully interrupt
+  schedulers:  # list of schedulers
+    -
+      name: queue1
+      threadCount: 5
+    -
+      name: queue2
+      threadCount: 5
+      
+################################################################################
+##### QUERY BUILDING                                                          ##
+# useConcatCondition : false by default 
+# if true, in the query, the where condition is build with key concatenation  ##
+################################################################################
+# query.useConcatCondition: true      
+
+####################################
+#####  CONTEXT PRE CONSTRUCT    ####
+####################################
+context.preconstruct.enable: false
+context.preconstruct.parallelism: 10
+context.preconstruct.frequencyInMillis: 100
+
+################################################################################
+###  MESSAGE QUEUE CONFIGURATION                                              ##
+# Message queues are disabled by default, should be enabled per project need  ##
+################################################################################
+blu4ivmq:
+  queues.enabled: false
+  allowedTypes: INFO,STATUS,NOTIFY,INQ #possible values: INFO, STATUS, NOTIFY, INQ, ESCAPE, DIAG, RQS, COMP
+
+########################################
+#####  JCL Batch Restart Mechanism  ####
+########################################
+jcl:
+  checkpoint:
+    enabled: false
+
+##########################################################
+#                Gapwalk database support                #
+# useSavePointToRestoreFail: false by default            #
+#   -true, save point will be created before an insert   #
+#     statement unless excluded in queries.mapping       #
+#   -false, save point will be created before an insert  #
+#     only if included in queries.mapping                #
+##########################################################
+gapwalk:
+  database:
+    support:
+      useSavePointToRestoreFail: false
+  ratelimiting:
+    enabled: false
+    requestsPerMinute: 1000
+    burstCapacity: 1500
+    includeHeaders: true
+
+########################################################################
+#                       Blu4iv Data Access Config                      #
+# useOldDaoDesign: A global flag that determines if the application is #
+#                  to use the old DAO architecture or the new.         #
+########################################################################
+blu4iv.dataaccess.useOldDaoDesign: false

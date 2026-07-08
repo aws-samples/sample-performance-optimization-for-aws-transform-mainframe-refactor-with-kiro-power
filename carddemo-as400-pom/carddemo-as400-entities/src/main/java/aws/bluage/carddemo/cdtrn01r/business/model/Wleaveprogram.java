@@ -1,0 +1,65 @@
+package aws.bluage.carddemo.cdtrn01r.business.model;
+
+import com.netfective.bluage.gapwalk.datasimplifier.configuration.Configuration;
+import com.netfective.bluage.gapwalk.datasimplifier.data.RecordAdaptable;
+import com.netfective.bluage.gapwalk.datasimplifier.data.structure.Elementary;
+import com.netfective.bluage.gapwalk.datasimplifier.data.structure.Group;
+import com.netfective.bluage.gapwalk.datasimplifier.entity.ElementaryRangeReference;
+import com.netfective.bluage.gapwalk.datasimplifier.entity.RecordEntity;
+import com.netfective.bluage.gapwalk.datasimplifier.metadata.type.AlphanumericType;
+/**
+ * Data simplifier entity Wleaveprogram.
+ * 
+ * <p>About 'wleaveprogram' field, <br>
+ * </p>
+ * 
+ * @see RecordEntity
+ */
+public class Wleaveprogram extends RecordEntity {
+
+	private final Group root = new Group(getData()); 
+	private final Elementary wleaveprogram = new Elementary(root,new AlphanumericType(1)," ");
+	
+	/**
+	 * Instantiate a new Wleaveprogram with a default record.
+	 * @param configuration the configuration
+	 */
+	public Wleaveprogram(Configuration configuration) {
+		super(configuration);
+		setupRoot(root);
+	}
+
+	/**
+	 * Instantiate a new Wleaveprogram bound to the provided record.
+	 * @param configuration the configuration
+	 * @param record the existing record to bind
+	 */
+	public Wleaveprogram(Configuration configuration, RecordAdaptable record) {
+		super(configuration);
+		setupRoot(root, record);
+	}
+
+	/**
+	 * Gets the reference for attribute wleaveprogram.
+	 * @return the wleaveprogram attribute reference
+	 */
+	public ElementaryRangeReference getWleaveprogramReference() {
+		return wleaveprogram.getReference();
+	}
+
+	/**
+	 * Getter for wleaveprogram attribute.
+	 * @return wleaveprogram attribute
+	 */
+	public String getWleaveprogram() {
+		return wleaveprogram.getValue();
+	}
+
+	/**
+	 * Setter for wleaveprogram attribute.
+	 * @param wleaveprogram the new value of wleaveprogram
+	 */
+	public void setWleaveprogram(String wleaveprogram) {
+		this.wleaveprogram.setValue(wleaveprogram);
+	}
+}

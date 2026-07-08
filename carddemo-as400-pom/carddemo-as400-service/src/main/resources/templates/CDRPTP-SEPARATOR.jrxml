@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SEPARATOR" pageWidth="672" pageHeight="20" columnWidth="672" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="db80ab7b-5adf-495a-b2c0-3e5f52af2a54">
+	<property name="lines.per.record" value="1"/>
+	<style name="FONTID_11" fontName="Monospaced" fontSize="10" isBold="false" isItalic="false" pdfFontName="Courier" isPdfEmbedded="false"/>
+	<detail>
+		<band height="20">
+			<staticText>
+				<reportElement style="FONTID_11" x="-7" y="0" width="14" height="20" uuid="c1122f0b-bd44-4fce-9067-94c14531415f"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="0" y="0" width="280" height="20" uuid="1ae736e9-0827-4ad6-84b7-64a14fc002d3"/>
+				<text><![CDATA[--------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="140" y="0" width="280" height="20" uuid="6854cfda-b8c1-4b35-a4d3-11194010e1b0"/>
+				<text><![CDATA[--------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="280" y="0" width="280" height="20" uuid="35d367b0-297f-4eca-b231-d5cd1aa008c9"/>
+				<text><![CDATA[--------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="420" y="0" width="252" height="20" uuid="0ad95f71-7f8b-487a-a1ff-55517c1fba60"/>
+				<text><![CDATA[------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="FONTID_11" x="546" y="0" width="14" height="20" uuid="93ac61b1-b944-4615-b938-8478d2db965a"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

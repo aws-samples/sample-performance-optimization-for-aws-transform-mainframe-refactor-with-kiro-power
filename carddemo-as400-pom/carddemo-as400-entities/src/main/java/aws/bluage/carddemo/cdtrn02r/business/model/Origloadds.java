@@ -1,0 +1,554 @@
+package aws.bluage.carddemo.cdtrn02r.business.model;
+
+import com.netfective.bluage.gapwalk.datasimplifier.configuration.Configuration;
+import com.netfective.bluage.gapwalk.datasimplifier.data.RecordAdaptable;
+import com.netfective.bluage.gapwalk.datasimplifier.data.structure.Elementary;
+import com.netfective.bluage.gapwalk.datasimplifier.data.structure.Group;
+import com.netfective.bluage.gapwalk.datasimplifier.entity.ElementaryRangeReference;
+import com.netfective.bluage.gapwalk.datasimplifier.entity.RecordEntity;
+import com.netfective.bluage.gapwalk.datasimplifier.metadata.type.AlphanumericType;
+import com.netfective.bluage.gapwalk.datasimplifier.metadata.type.PackedType;
+import com.netfective.bluage.gapwalk.datasimplifier.metadata.type.ZonedType;
+import java.math.BigDecimal;
+/**
+ * Data simplifier entity Origloadds.
+ * 
+ * <p>About 'trnid' field, <br>
+ * </p>
+ * 
+ * <p>About 'cardnum' field, <br>
+ * </p>
+ * 
+ * <p>About 'typecd' field, <br>
+ * </p>
+ * 
+ * <p>About 'categcd' field, <br>
+ * </p>
+ * 
+ * <p>About 'source' field, <br>
+ * </p>
+ * 
+ * <p>About 'dess' field, <br>
+ * </p>
+ * 
+ * <p>About 'amount' field, <br>
+ * </p>
+ * 
+ * <p>About 'origdate' field, <br>
+ * </p>
+ * 
+ * <p>About 'procdate' field, <br>
+ * </p>
+ * 
+ * <p>About 'merchid' field, <br>
+ * </p>
+ * 
+ * <p>About 'trnstatus' field, <br>
+ * </p>
+ * 
+ * <p>About 'trncrtdt' field, <br>
+ * </p>
+ * 
+ * <p>About 'trncrttm' field, <br>
+ * </p>
+ * 
+ * <p>About 'trncrtusr' field, <br>
+ * </p>
+ * 
+ * <p>About 'trncrtpgm' field, <br>
+ * </p>
+ * 
+ * <p>About 'trnchgdt' field, <br>
+ * </p>
+ * 
+ * <p>About 'trnchgtm' field, <br>
+ * </p>
+ * 
+ * <p>About 'trnchgusr' field, <br>
+ * </p>
+ * 
+ * <p>About 'trnchgpgm' field, <br>
+ * </p>
+ * 
+ * @see RecordEntity
+ */
+public class Origloadds extends RecordEntity {
+
+	private final Group root = new Group(getData()); 
+	private final Elementary trnid = new Elementary(root,new PackedType(15, 0, true));
+	private final Elementary cardnum = new Elementary(root,new PackedType(16, 0, true));
+	private final Elementary typecd = new Elementary(root,new AlphanumericType(2));
+	private final Elementary categcd = new Elementary(root,new AlphanumericType(4));
+	private final Elementary source = new Elementary(root,new AlphanumericType(1));
+	private final Elementary dess = new Elementary(root,new AlphanumericType(30));
+	private final Elementary amount = new Elementary(root,new ZonedType(9, 2, true));
+	private final Elementary origdate = new Elementary(root,new AlphanumericType(10));
+	private final Elementary procdate = new Elementary(root,new AlphanumericType(10));
+	private final Elementary merchid = new Elementary(root,new PackedType(9, 0, true));
+	private final Elementary trnstatus = new Elementary(root,new AlphanumericType(1));
+	private final Elementary trncrtdt = new Elementary(root,new PackedType(7, 0, true));
+	private final Elementary trncrttm = new Elementary(root,new PackedType(6, 0, true));
+	private final Elementary trncrtusr = new Elementary(root,new AlphanumericType(10));
+	private final Elementary trncrtpgm = new Elementary(root,new AlphanumericType(10));
+	private final Elementary trnchgdt = new Elementary(root,new PackedType(7, 0, true));
+	private final Elementary trnchgtm = new Elementary(root,new PackedType(6, 0, true));
+	private final Elementary trnchgusr = new Elementary(root,new AlphanumericType(10));
+	private final Elementary trnchgpgm = new Elementary(root,new AlphanumericType(10));
+	
+	/**
+	 * Instantiate a new Origloadds with a default record.
+	 * @param configuration the configuration
+	 */
+	public Origloadds(Configuration configuration) {
+		super(configuration);
+		setupRoot(root);
+	}
+
+	/**
+	 * Instantiate a new Origloadds bound to the provided record.
+	 * @param configuration the configuration
+	 * @param record the existing record to bind
+	 */
+	public Origloadds(Configuration configuration, RecordAdaptable record) {
+		super(configuration);
+		setupRoot(root, record);
+	}
+
+	/**
+	 * Gets the reference for attribute trnid.
+	 * @return the trnid attribute reference
+	 */
+	public ElementaryRangeReference getTrnidReference() {
+		return trnid.getReference();
+	}
+
+	/**
+	 * Getter for trnid attribute.
+	 * @return trnid attribute
+	 */
+	public long getTrnid() {
+		return trnid.getValue();
+	}
+
+	/**
+	 * Setter for trnid attribute.
+	 * @param trnid the new value of trnid
+	 */
+	public void setTrnid(long trnid) {
+		this.trnid.setValue(trnid);
+	}
+	/**
+	 * Gets the reference for attribute cardnum.
+	 * @return the cardnum attribute reference
+	 */
+	public ElementaryRangeReference getCardnumReference() {
+		return cardnum.getReference();
+	}
+
+	/**
+	 * Getter for cardnum attribute.
+	 * @return cardnum attribute
+	 */
+	public long getCardnum() {
+		return cardnum.getValue();
+	}
+
+	/**
+	 * Setter for cardnum attribute.
+	 * @param cardnum the new value of cardnum
+	 */
+	public void setCardnum(long cardnum) {
+		this.cardnum.setValue(cardnum);
+	}
+	/**
+	 * Gets the reference for attribute typecd.
+	 * @return the typecd attribute reference
+	 */
+	public ElementaryRangeReference getTypecdReference() {
+		return typecd.getReference();
+	}
+
+	/**
+	 * Getter for typecd attribute.
+	 * @return typecd attribute
+	 */
+	public String getTypecd() {
+		return typecd.getValue();
+	}
+
+	/**
+	 * Setter for typecd attribute.
+	 * @param typecd the new value of typecd
+	 */
+	public void setTypecd(String typecd) {
+		this.typecd.setValue(typecd);
+	}
+	/**
+	 * Gets the reference for attribute categcd.
+	 * @return the categcd attribute reference
+	 */
+	public ElementaryRangeReference getCategcdReference() {
+		return categcd.getReference();
+	}
+
+	/**
+	 * Getter for categcd attribute.
+	 * @return categcd attribute
+	 */
+	public String getCategcd() {
+		return categcd.getValue();
+	}
+
+	/**
+	 * Setter for categcd attribute.
+	 * @param categcd the new value of categcd
+	 */
+	public void setCategcd(String categcd) {
+		this.categcd.setValue(categcd);
+	}
+	/**
+	 * Gets the reference for attribute source.
+	 * @return the source attribute reference
+	 */
+	public ElementaryRangeReference getSourceReference() {
+		return source.getReference();
+	}
+
+	/**
+	 * Getter for source attribute.
+	 * @return source attribute
+	 */
+	public String getSource() {
+		return source.getValue();
+	}
+
+	/**
+	 * Setter for source attribute.
+	 * @param source the new value of source
+	 */
+	public void setSource(String source) {
+		this.source.setValue(source);
+	}
+	/**
+	 * Gets the reference for attribute dess.
+	 * @return the dess attribute reference
+	 */
+	public ElementaryRangeReference getDessReference() {
+		return dess.getReference();
+	}
+
+	/**
+	 * Getter for dess attribute.
+	 * @return dess attribute
+	 */
+	public String getDess() {
+		return dess.getValue();
+	}
+
+	/**
+	 * Setter for dess attribute.
+	 * @param dess the new value of dess
+	 */
+	public void setDess(String dess) {
+		this.dess.setValue(dess);
+	}
+	/**
+	 * Gets the reference for attribute amount.
+	 * @return the amount attribute reference
+	 */
+	public ElementaryRangeReference getAmountReference() {
+		return amount.getReference();
+	}
+
+	/**
+	 * Getter for amount attribute.
+	 * @return amount attribute
+	 */
+	public BigDecimal getAmount() {
+		return amount.getValue();
+	}
+
+	/**
+	 * Setter for amount attribute.
+	 * @param amount the new value of amount
+	 */
+	public void setAmount(BigDecimal amount) {
+		this.amount.setValue(amount);
+	}
+	/**
+	 * Gets the reference for attribute origdate.
+	 * @return the origdate attribute reference
+	 */
+	public ElementaryRangeReference getOrigdateReference() {
+		return origdate.getReference();
+	}
+
+	/**
+	 * Getter for origdate attribute.
+	 * @return origdate attribute
+	 */
+	public String getOrigdate() {
+		return origdate.getValue();
+	}
+
+	/**
+	 * Setter for origdate attribute.
+	 * @param origdate the new value of origdate
+	 */
+	public void setOrigdate(String origdate) {
+		this.origdate.setValue(origdate);
+	}
+	/**
+	 * Gets the reference for attribute procdate.
+	 * @return the procdate attribute reference
+	 */
+	public ElementaryRangeReference getProcdateReference() {
+		return procdate.getReference();
+	}
+
+	/**
+	 * Getter for procdate attribute.
+	 * @return procdate attribute
+	 */
+	public String getProcdate() {
+		return procdate.getValue();
+	}
+
+	/**
+	 * Setter for procdate attribute.
+	 * @param procdate the new value of procdate
+	 */
+	public void setProcdate(String procdate) {
+		this.procdate.setValue(procdate);
+	}
+	/**
+	 * Gets the reference for attribute merchid.
+	 * @return the merchid attribute reference
+	 */
+	public ElementaryRangeReference getMerchidReference() {
+		return merchid.getReference();
+	}
+
+	/**
+	 * Getter for merchid attribute.
+	 * @return merchid attribute
+	 */
+	public int getMerchid() {
+		return merchid.getValue();
+	}
+
+	/**
+	 * Setter for merchid attribute.
+	 * @param merchid the new value of merchid
+	 */
+	public void setMerchid(int merchid) {
+		this.merchid.setValue(merchid);
+	}
+	/**
+	 * Gets the reference for attribute trnstatus.
+	 * @return the trnstatus attribute reference
+	 */
+	public ElementaryRangeReference getTrnstatusReference() {
+		return trnstatus.getReference();
+	}
+
+	/**
+	 * Getter for trnstatus attribute.
+	 * @return trnstatus attribute
+	 */
+	public String getTrnstatus() {
+		return trnstatus.getValue();
+	}
+
+	/**
+	 * Setter for trnstatus attribute.
+	 * @param trnstatus the new value of trnstatus
+	 */
+	public void setTrnstatus(String trnstatus) {
+		this.trnstatus.setValue(trnstatus);
+	}
+	/**
+	 * Gets the reference for attribute trncrtdt.
+	 * @return the trncrtdt attribute reference
+	 */
+	public ElementaryRangeReference getTrncrtdtReference() {
+		return trncrtdt.getReference();
+	}
+
+	/**
+	 * Getter for trncrtdt attribute.
+	 * @return trncrtdt attribute
+	 */
+	public int getTrncrtdt() {
+		return trncrtdt.getValue();
+	}
+
+	/**
+	 * Setter for trncrtdt attribute.
+	 * @param trncrtdt the new value of trncrtdt
+	 */
+	public void setTrncrtdt(int trncrtdt) {
+		this.trncrtdt.setValue(trncrtdt);
+	}
+	/**
+	 * Gets the reference for attribute trncrttm.
+	 * @return the trncrttm attribute reference
+	 */
+	public ElementaryRangeReference getTrncrttmReference() {
+		return trncrttm.getReference();
+	}
+
+	/**
+	 * Getter for trncrttm attribute.
+	 * @return trncrttm attribute
+	 */
+	public int getTrncrttm() {
+		return trncrttm.getValue();
+	}
+
+	/**
+	 * Setter for trncrttm attribute.
+	 * @param trncrttm the new value of trncrttm
+	 */
+	public void setTrncrttm(int trncrttm) {
+		this.trncrttm.setValue(trncrttm);
+	}
+	/**
+	 * Gets the reference for attribute trncrtusr.
+	 * @return the trncrtusr attribute reference
+	 */
+	public ElementaryRangeReference getTrncrtusrReference() {
+		return trncrtusr.getReference();
+	}
+
+	/**
+	 * Getter for trncrtusr attribute.
+	 * @return trncrtusr attribute
+	 */
+	public String getTrncrtusr() {
+		return trncrtusr.getValue();
+	}
+
+	/**
+	 * Setter for trncrtusr attribute.
+	 * @param trncrtusr the new value of trncrtusr
+	 */
+	public void setTrncrtusr(String trncrtusr) {
+		this.trncrtusr.setValue(trncrtusr);
+	}
+	/**
+	 * Gets the reference for attribute trncrtpgm.
+	 * @return the trncrtpgm attribute reference
+	 */
+	public ElementaryRangeReference getTrncrtpgmReference() {
+		return trncrtpgm.getReference();
+	}
+
+	/**
+	 * Getter for trncrtpgm attribute.
+	 * @return trncrtpgm attribute
+	 */
+	public String getTrncrtpgm() {
+		return trncrtpgm.getValue();
+	}
+
+	/**
+	 * Setter for trncrtpgm attribute.
+	 * @param trncrtpgm the new value of trncrtpgm
+	 */
+	public void setTrncrtpgm(String trncrtpgm) {
+		this.trncrtpgm.setValue(trncrtpgm);
+	}
+	/**
+	 * Gets the reference for attribute trnchgdt.
+	 * @return the trnchgdt attribute reference
+	 */
+	public ElementaryRangeReference getTrnchgdtReference() {
+		return trnchgdt.getReference();
+	}
+
+	/**
+	 * Getter for trnchgdt attribute.
+	 * @return trnchgdt attribute
+	 */
+	public int getTrnchgdt() {
+		return trnchgdt.getValue();
+	}
+
+	/**
+	 * Setter for trnchgdt attribute.
+	 * @param trnchgdt the new value of trnchgdt
+	 */
+	public void setTrnchgdt(int trnchgdt) {
+		this.trnchgdt.setValue(trnchgdt);
+	}
+	/**
+	 * Gets the reference for attribute trnchgtm.
+	 * @return the trnchgtm attribute reference
+	 */
+	public ElementaryRangeReference getTrnchgtmReference() {
+		return trnchgtm.getReference();
+	}
+
+	/**
+	 * Getter for trnchgtm attribute.
+	 * @return trnchgtm attribute
+	 */
+	public int getTrnchgtm() {
+		return trnchgtm.getValue();
+	}
+
+	/**
+	 * Setter for trnchgtm attribute.
+	 * @param trnchgtm the new value of trnchgtm
+	 */
+	public void setTrnchgtm(int trnchgtm) {
+		this.trnchgtm.setValue(trnchgtm);
+	}
+	/**
+	 * Gets the reference for attribute trnchgusr.
+	 * @return the trnchgusr attribute reference
+	 */
+	public ElementaryRangeReference getTrnchgusrReference() {
+		return trnchgusr.getReference();
+	}
+
+	/**
+	 * Getter for trnchgusr attribute.
+	 * @return trnchgusr attribute
+	 */
+	public String getTrnchgusr() {
+		return trnchgusr.getValue();
+	}
+
+	/**
+	 * Setter for trnchgusr attribute.
+	 * @param trnchgusr the new value of trnchgusr
+	 */
+	public void setTrnchgusr(String trnchgusr) {
+		this.trnchgusr.setValue(trnchgusr);
+	}
+	/**
+	 * Gets the reference for attribute trnchgpgm.
+	 * @return the trnchgpgm attribute reference
+	 */
+	public ElementaryRangeReference getTrnchgpgmReference() {
+		return trnchgpgm.getReference();
+	}
+
+	/**
+	 * Getter for trnchgpgm attribute.
+	 * @return trnchgpgm attribute
+	 */
+	public String getTrnchgpgm() {
+		return trnchgpgm.getValue();
+	}
+
+	/**
+	 * Setter for trnchgpgm attribute.
+	 * @param trnchgpgm the new value of trnchgpgm
+	 */
+	public void setTrnchgpgm(String trnchgpgm) {
+		this.trnchgpgm.setValue(trnchgpgm);
+	}
+}

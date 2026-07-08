@@ -1,0 +1,23 @@
+<div [ngStyle]="mapDivStyle()">
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div [ngClass]="displaySfl()">
+	<app-table #table [id]='"sfl1"' [rows]='sfl1' [nbDisplayedEntries]='13' [nbLinesByRow]='1'>
+		<ng-template let-i>
+			<div class='lgr_col split'>
+				<cdcca01d-sfl1 *ngIf="sfl1.length > i" [(sfl1)]='sfl1[i]' [index]='i'></cdcca01d-sfl1>
+			</div>
+		</ng-template>
+	</app-table>
+</div>
+</div>

@@ -1,0 +1,109 @@
+<div [ngStyle]="mapDivStyle()">
+<div class='lgr_col'>
+  <div class='lgr_10 col_01'><dynamic-field [id]='"labelUser"' [size]=10 [line]=1 [column]=1 [(ngModel)]='labelUser'></dynamic-field></div>
+  <div class='lgr_12 col_34'><span class='white' id='text1'>AWS CardDemo</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"date1"' [size]=8 [line]=1 [column]=71 [(ngModel)]='date1'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_10 col_01'><dynamic-field [id]='"pgmname"' [size]=10 [line]=2 [column]=1 [(ngModel)]='pgmname'></dynamic-field></div>
+  <div class='lgr_13 col_33'><dynamic-field [id]='"labelViewCustomer"' [size]=13 [line]=2 [column]=33 [(ngModel)]='labelViewCustomer'></dynamic-field></div>
+  <div class='lgr_15 col_33'><dynamic-field [id]='"labelUpdateCustomer"' [size]=15 [line]=2 [column]=33 [(ngModel)]='labelUpdateCustomer'></dynamic-field></div>
+  <div class='lgr_12 col_34'><dynamic-field [id]='"labelAddCustomer"' [size]=12 [line]=2 [column]=34 [(ngModel)]='labelAddCustomer'></dynamic-field></div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"time1"' [size]=8 [line]=2 [column]=71 [edtwrd]='"0  :  :  "' [(ngModel)]='time1'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_03'><span class='default' id='text2'>Customer ID :</span>  </div>
+  <div class='lgr_09 col_18'><dynamic-field [id]='"custid"' [size]=9 [line]=4 [column]=18 [(ngModel)]='custid'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_03'><span class='default' id='text3'>SSN         :</span>  </div>
+  <div class='lgr_09 col_18'><dynamic-field [id]='"ssn"' [size]=9 [line]=6 [column]=18 [(ngModel)]='ssn'></dynamic-field></div>
+  <div class='lgr_12 col_36'><span class='default' id='text4'>FICO Score :</span>  </div>
+  <div class='lgr_03 col_50'><dynamic-field [id]='"ficoscore"' [size]=3 [line]=6 [column]=50 [(ngModel)]='ficoscore'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_03'><span class='default' id='text5'>Birthday    :</span>  </div>
+  <div class='lgr_10 col_18'><dynamic-field [id]='"dob"' [size]=10 [line]=7 [column]=18 [(ngModel)]='dob'></dynamic-field></div>
+  <div class='lgr_04 col_18'><dynamic-field [id]='"birthyr"' [size]=4 [line]=7 [column]=18 [(ngModel)]='birthyr'></dynamic-field></div>
+  <div class='lgr_02 col_23'><dynamic-field [id]='"birthmo"' [size]=2 [line]=7 [column]=23 [(ngModel)]='birthmo'></dynamic-field></div>
+  <div class='lgr_02 col_26'><dynamic-field [id]='"birthday"' [size]=2 [line]=7 [column]=26 [(ngModel)]='birthday'></dynamic-field></div>
+  <div class='lgr_08 col_36'><span class='default' id='text6'>Gender :</span>  </div>
+  <div class='lgr_01 col_45'><dynamic-field [id]='"gender"' [size]=1 [line]=7 [column]=45 [(ngModel)]='gender'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_03'><span class='default' id='text7'>First Name  :</span>  </div>
+  <div class='lgr_25 col_18'><dynamic-field [id]='"firstname"' [size]=25 [line]=9 [column]=18 [(ngModel)]='firstname'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_03'><span class='default' id='text8'>Middle Name :</span>  </div>
+  <div class='lgr_25 col_18'><dynamic-field [id]='"middlename"' [size]=25 [line]=10 [column]=18 [(ngModel)]='middlename'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_03'><span class='default' id='text9'>Last Name   :</span>  </div>
+  <div class='lgr_25 col_18'><dynamic-field [id]='"lastname"' [size]=25 [line]=11 [column]=18 [(ngModel)]='lastname'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_03'><span class='default' id='text10'>Address 1   :</span>  </div>
+  <div class='lgr_40 col_18'><dynamic-field [id]='"address1"' [size]=40 [line]=13 [column]=18 [(ngModel)]='address1'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_03'><span class='default' id='text11'>Address 2   :</span>  </div>
+  <div class='lgr_40 col_18'><dynamic-field [id]='"address2"' [size]=40 [line]=14 [column]=18 [(ngModel)]='address2'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_03'><span class='default' id='text12'>City        :</span>  </div>
+  <div class='lgr_20 col_18'><dynamic-field [id]='"city"' [size]=20 [line]=15 [column]=18 [(ngModel)]='city'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_03'><span class='default' id='text13'>State       :</span>  </div>
+  <div class='lgr_02 col_18'><dynamic-field [id]='"state"' [size]=2 [line]=16 [column]=18 [(ngModel)]='state'></dynamic-field></div>
+  <div class='lgr_05 col_38'><span class='default' id='text14'>ZIP :</span>  </div>
+  <div class='lgr_05 col_45'><dynamic-field [id]='"zip"' [size]=5 [line]=16 [column]=45 [(ngModel)]='zip'></dynamic-field></div>
+  <div class='lgr_09 col_58'><span class='default' id='text15'>Country :</span>  </div>
+  <div class='lgr_03 col_69'><dynamic-field [id]='"country"' [size]=3 [line]=16 [column]=69 [(ngModel)]='country'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_03'><span class='default' id='text16'>Phone 1     :</span>  </div>
+  <div class='lgr_03 col_18'><dynamic-field [id]='"phone1area"' [size]=3 [line]=17 [column]=18 [(ngModel)]='phone1area'></dynamic-field></div>
+  <div class='lgr_03 col_22'><dynamic-field [id]='"phone1f3"' [size]=3 [line]=17 [column]=22 [(ngModel)]='phone1f3'></dynamic-field></div>
+  <div class='lgr_04 col_26'><dynamic-field [id]='"phone1l4"' [size]=4 [line]=17 [column]=26 [(ngModel)]='phone1l4'></dynamic-field></div>
+  <div class='lgr_09 col_38'><span class='default' id='text17'>Phone 2 :</span>  </div>
+  <div class='lgr_03 col_49'><dynamic-field [id]='"phone2area"' [size]=3 [line]=17 [column]=49 [(ngModel)]='phone2area'></dynamic-field></div>
+  <div class='lgr_03 col_53'><dynamic-field [id]='"phone2f3"' [size]=3 [line]=17 [column]=53 [(ngModel)]='phone2f3'></dynamic-field></div>
+  <div class='lgr_04 col_57'><dynamic-field [id]='"phone2l4"' [size]=4 [line]=17 [column]=57 [(ngModel)]='phone2l4'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_11 col_03'><dynamic-field [id]='"labelCreatedBy"' [size]=11 [line]=19 [column]=3 [(ngModel)]='labelCreatedBy'></dynamic-field></div>
+  <div class='lgr_10 col_15'><dynamic-field [id]='"cuscrtusr"' [size]=10 [line]=19 [column]=15 [(ngModel)]='cuscrtusr'></dynamic-field></div>
+  <div class='lgr_03 col_28'><dynamic-field [id]='"labelOn"' [size]=3 [line]=19 [column]=28 [(ngModel)]='labelOn'></dynamic-field></div>
+  <div class='lgr_10 col_32'><dynamic-field [id]='"cuscrtdt"' [size]=10 [line]=19 [column]=32 [digitNb]='8' [decSize]='0' [edtwrd]='"    -  -  "' [(ngModel)]='cuscrtdt'></dynamic-field></div>
+  <div class='lgr_08 col_43'><dynamic-field [id]='"cuscrttm"' [size]=8 [line]=19 [column]=43 [digitNb]='6' [decSize]='0' [edtwrd]='"0  :  :  "' [(ngModel)]='cuscrttm'></dynamic-field></div>
+  <div class='lgr_08 col_54'><dynamic-field [id]='"labelProgram"' [size]=8 [line]=19 [column]=54 [(ngModel)]='labelProgram'></dynamic-field></div>
+  <div class='lgr_10 col_63'><dynamic-field [id]='"cuscrtpgm"' [size]=10 [line]=19 [column]=63 [(ngModel)]='cuscrtpgm'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_11 col_03'><dynamic-field [id]='"labelUpdatedBy"' [size]=11 [line]=20 [column]=3 [(ngModel)]='labelUpdatedBy'></dynamic-field></div>
+  <div class='lgr_10 col_15'><dynamic-field [id]='"cuschgusr"' [size]=10 [line]=20 [column]=15 [(ngModel)]='cuschgusr'></dynamic-field></div>
+  <div class='lgr_03 col_28'><dynamic-field [id]='"labelOn1"' [size]=3 [line]=20 [column]=28 [(ngModel)]='labelOn1'></dynamic-field></div>
+  <div class='lgr_10 col_32'><dynamic-field [id]='"cuschgdt"' [size]=10 [line]=20 [column]=32 [digitNb]='8' [decSize]='0' [edtwrd]='"    -  -  "' [(ngModel)]='cuschgdt'></dynamic-field></div>
+  <div class='lgr_08 col_43'><dynamic-field [id]='"cuschgtm"' [size]=8 [line]=20 [column]=43 [digitNb]='6' [decSize]='0' [edtwrd]='"0  :  :  "' [(ngModel)]='cuschgtm'></dynamic-field></div>
+  <div class='lgr_08 col_54'><dynamic-field [id]='"labelProgram1"' [size]=8 [line]=20 [column]=54 [(ngModel)]='labelProgram1'></dynamic-field></div>
+  <div class='lgr_10 col_63'><dynamic-field [id]='"cuschgpgm"' [size]=10 [line]=20 [column]=63 [(ngModel)]='cuschgpgm'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_07 col_01'><span class='blue' id='text18'>F3=Exit</span>  </div>
+  <div class='lgr_10 col_10'><span class='blue' id='text19'>F12=Cancel</span>  </div>
+</div>
+</div>

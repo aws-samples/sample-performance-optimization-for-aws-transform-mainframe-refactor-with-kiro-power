@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SUMMARY" pageWidth="560" pageHeight="20" columnWidth="560" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4e6f8366-34dc-4245-9981-eb0bd17142ea">
+	<property name="lines.per.record" value="1"/>
+	<style name="FONTID_11" fontName="Monospaced" fontSize="10" isBold="false" isItalic="false" pdfFontName="Courier" isPdfEmbedded="false"/>
+	<field name="rmetric" class="java.lang.String"/>
+	<field name="rvalue" class="java.lang.String"/>
+	<detail>
+		<band height="20">
+			<staticText>
+				<reportElement style="FONTID_11" x="-7" y="0" width="14" height="20" uuid="d717f6b5-b3a8-4855-be0b-c92fabad0e0c"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="FONTID_11" x="7" y="0" width="280" height="20" uuid="e4ab704f-ebc1-495f-b6aa-c305f546605d"/>
+				<textFieldExpression><![CDATA[$F{rmetric}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="FONTID_11" x="154" y="0" width="14" height="20" uuid="b6f0dd66-db33-4f9f-93f2-4af8c97c176d"/>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="FONTID_11" x="168" y="0" width="168" height="20" uuid="caef881f-c197-4c39-b04f-0526ea58a222"/>
+				<textFieldExpression><![CDATA[$F{rvalue}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="FONTID_11" x="546" y="0" width="14" height="20" uuid="b507fc76-f5ec-4f8d-91ac-f140be944ce9"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

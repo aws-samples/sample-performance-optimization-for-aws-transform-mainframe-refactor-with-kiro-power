@@ -1,0 +1,13 @@
+# Logback context logger integration.
+logging:
+  config: classpath:logback-carddemo-as400.xml
+  level:
+    org.springframework.beans.factory.support.DefaultListableBeanFactory: WARN
+    org.springframework.statemachine: WARN
+
+# If the datasource support mode is not static-xa, spring JTA transactions autoconfiguration must me disabled
+spring:
+  jta:
+    enabled: false
+  config:
+    import: optional:file:${catalina.home}/conf/application-cdbalc01.yml

@@ -1,0 +1,48 @@
+# IDE Files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Maven Build Outputs
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+logs/
+
+# Server folder - exclude everything except conf/
+server/*
+!server/conf/
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Environment / secrets
+.env
+
+# Backup files
+*.bak
+*.swp
+*.tmp
+*~

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DETAIL" pageWidth="560" pageHeight="20" columnWidth="560" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="b7c82ca4-c8ac-4e82-9e44-594d4ac81258">
+	<property name="lines.per.record" value="1"/>
+	<style name="FONTID_11" fontName="Monospaced" fontSize="10" isBold="false" isItalic="false" pdfFontName="Courier" isPdfEmbedded="false"/>
+	<field name="racct" class="java.lang.String"/>
+	<field name="rcus" class="java.lang.String"/>
+	<field name="rtype" class="java.lang.String"/>
+	<field name="rcheck" class="java.lang.String"/>
+	<detail>
+		<band height="20">
+			<staticText>
+				<reportElement style="FONTID_11" x="-7" y="0" width="14" height="20" uuid="0d0caec9-e2fa-48a6-a0fe-4c85c748416b"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="FONTID_11" x="7" y="0" width="168" height="20" uuid="4c4d3d74-6cf2-4702-8318-a63fc0dd0891"/>
+				<textFieldExpression><![CDATA[$F{racct}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="FONTID_11" x="126" y="0" width="14" height="20" uuid="bcc41197-0213-413d-a704-5f460f7c687a"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="FONTID_11" x="140" y="0" width="126" height="20" uuid="40e0cc52-4353-4465-9464-17d3878a8f6e"/>
+				<textFieldExpression><![CDATA[$F{rcus}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="FONTID_11" x="266" y="0" width="14" height="20" uuid="75d1a81c-3956-480b-aa91-63c866cc97d4"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="FONTID_11" x="280" y="0" width="140" height="20" uuid="bf14e944-f73e-4a55-b6ad-c4dfa245659a"/>
+				<textFieldExpression><![CDATA[$F{rtype}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="FONTID_11" x="406" y="0" width="14" height="20" uuid="762e844f-570a-44ed-bf1e-1f977d2be826"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="FONTID_11" x="420" y="0" width="140" height="20" uuid="73bb4fd5-d6c9-47b5-b070-358925e935c4"/>
+				<textFieldExpression><![CDATA[$F{rcheck}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="FONTID_11" x="546" y="0" width="14" height="20" uuid="1b599b63-66da-4a5b-a5d4-00c458d43f39"/>
+				<text><![CDATA[|]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
