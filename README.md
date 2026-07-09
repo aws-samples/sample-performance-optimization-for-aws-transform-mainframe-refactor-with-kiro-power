@@ -1,6 +1,6 @@
 # CardDemo AWS Transform Mainframe Refactor Performance Optimization Sample
 
-This repository demonstrates AI-assisted performance optimization of applications modernized using AWS Transform for mainframe refactor, using Kiro IDE and a purpose-built AWS Gapwalk Performance Optimization Power.
+This repository demonstrates AI-assisted performance optimization of applications modernized using AWS Transform for mainframe refactor, using Kiro IDE and a purpose-built AWS Transform Mainframe Refactor Performance Optimization Power.
 
 ## Overview
 

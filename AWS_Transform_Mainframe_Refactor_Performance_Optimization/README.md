@@ -1,4 +1,4 @@
-# AWS Gapwalk Performance Optimization Power
+# AWS Transform Mainframe Refactor Performance Optimization Power
 
 This Power teaches Kiro to identify and fix performance bottlenecks in batch jobs modernized through AWS Transform for mainframe refactor. It targets the AWS Gapwalk runtime's native APIs — `SQLExecutorBuilder` for SQL-level optimization and `addRecordToBatch()`/`batchWriteDirect()` for bulk DAO operations.
 

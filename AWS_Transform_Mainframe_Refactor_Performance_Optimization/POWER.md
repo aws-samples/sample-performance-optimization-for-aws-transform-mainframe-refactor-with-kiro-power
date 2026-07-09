@@ -1,5 +1,5 @@
 ---
-name: aws-gapwalk-performance-optimization
+name: aws-transform-mainframe-refactor-performance-optimization
 version: 1.0.0
 description: Performance optimization guidance for applications modernized with AWS Transform for mainframe refactor (AWS Gapwalk runtime)
 keywords:
@@ -13,7 +13,7 @@ keywords:
   - latency
 ---
 
-# AWS Gapwalk Performance Optimization
+# AWS Transform Mainframe Refactor Performance Optimization
 
 This power provides comprehensive guidance for identifying and implementing performance optimizations in applications modernized from AS/400/iSeries using AWS Transform for mainframe refactor (running on the AWS Gapwalk runtime).
 
